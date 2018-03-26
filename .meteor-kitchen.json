@@ -1,0 +1,915 @@
+{
+	"output_files": [
+		{
+			"path": "client/views/router.js",
+			"checksum": "fa27afb04b2f6d22780623b79ffcd32de7b0f78a"
+		},
+		{
+			"path": "server/controllers/router.js",
+			"checksum": "f9d076cc64b65aa4ce85d9ca7272d8cfefc46694"
+		},
+		{
+			"path": "client/client.js",
+			"checksum": "e5edfc62d24a1b5fe123c5dc84b2769d40705c01"
+		},
+		{
+			"path": "server/server.js",
+			"checksum": "0f0b76f029b324983d0d6550a185484ad491b84c"
+		},
+		{
+			"path": "client/views/not_found/not_found.html",
+			"checksum": "df91b51c0a4787a26c4a7ea8ad72ca8310f72b41"
+		},
+		{
+			"path": "client/views/not_found/not_found.js",
+			"checksum": "b399a9a22e2f99c058a00b68bf264a244f09deaf"
+		},
+		{
+			"path": "client/views/loading/loading.html",
+			"checksum": "99e97ba60ddf18b9ed3977aa1f73b1fe3494922a"
+		},
+		{
+			"path": "client/views/loading/loading.js",
+			"checksum": "bd568a6b49a113afe91fedda35a96125c9731a87"
+		},
+		{
+			"path": "client/styles/styles/theme/bootswatch.import.less",
+			"checksum": "f8f6bbdd864036e12c390b9cbaa3ecce06494e87"
+		},
+		{
+			"path": "client/styles/styles/theme/theme.import.less",
+			"checksum": "f04733519720132ea291b6b3ad138181bf83bab4"
+		},
+		{
+			"path": "client/styles/styles/theme/themefix.import.less",
+			"checksum": "65d94792bea5905f40f9cde2d071a921ca342839"
+		},
+		{
+			"path": "client/styles/styles/theme/variables.import.less",
+			"checksum": "2579c5db372a76ecf05a56c7ce253d310dc30772"
+		},
+		{
+			"path": "client/styles/styles/styles.less",
+			"checksum": "d37441c8868b8e33d29f2465509f52381d89ea6e"
+		},
+		{
+			"path": "client/views/layout/layout.html",
+			"checksum": "3107740b5ce5890e250a69b06cfe37191403fbea"
+		},
+		{
+			"path": "client/views/layout/layout.js",
+			"checksum": "e9c856c56d45721c157b491ecd7ee5165a52d349"
+		},
+		{
+			"path": "client/views/home_public/home_public.html",
+			"checksum": "0084cfd924d1c9df1726c038ba0abb1960cd5b19"
+		},
+		{
+			"path": "client/views/home_public/home_public.js",
+			"checksum": "76f7fad7356f508c2664c309407fe23ee3f643d1"
+		},
+		{
+			"path": "client/views/home_public/home_public_controller.js",
+			"checksum": "a74fe8e593e0287c07d5c739d696b2117e6e709a"
+		},
+		{
+			"path": "client/views/login/login.html",
+			"checksum": "98d225bfca233bc43dfe8dee374ee170b829f02b"
+		},
+		{
+			"path": "client/views/login/login.js",
+			"checksum": "2a06a40e536270951f597288bbc0c2695db2c47a"
+		},
+		{
+			"path": "client/views/login/login_controller.js",
+			"checksum": "bb5224a58563fa3c11fa61c29f56eaf884768aa3"
+		},
+		{
+			"path": "client/views/register/register.html",
+			"checksum": "6f6a9f30c8dbeaf9c31335ab089db1bbe4aefacb"
+		},
+		{
+			"path": "client/views/register/register.js",
+			"checksum": "ffde23d9d657d642fc575a082eca518820a95265"
+		},
+		{
+			"path": "client/views/register/register_controller.js",
+			"checksum": "e04c321a9f410c8ea1c2ff703da1542d75942745"
+		},
+		{
+			"path": "client/views/verify_email/verify_email.html",
+			"checksum": "db1771ff15f3af2c72830abeb2896158045d4f72"
+		},
+		{
+			"path": "client/views/verify_email/verify_email.js",
+			"checksum": "62d5ebc927a942911174e5ae1ed5616320ed0c64"
+		},
+		{
+			"path": "client/views/verify_email/verify_email_controller.js",
+			"checksum": "18ffe62907bc6a77e732a632035de4b79943f726"
+		},
+		{
+			"path": "client/views/forgot_password/forgot_password.html",
+			"checksum": "d28a61ac325a7ee0fbdf8f805a11ffd9f488f219"
+		},
+		{
+			"path": "client/views/forgot_password/forgot_password.js",
+			"checksum": "fc7560f5782847c26b58f15f160aaa2e4c5646eb"
+		},
+		{
+			"path": "client/views/forgot_password/forgot_password_controller.js",
+			"checksum": "4fa77c07252926439e800a7d5b98e79090d20e77"
+		},
+		{
+			"path": "client/views/reset_password/reset_password.html",
+			"checksum": "59b305ffe597317a5f904dd3321aa6ef0d82ba33"
+		},
+		{
+			"path": "client/views/reset_password/reset_password.js",
+			"checksum": "266da8ff02af1da2025807d0d10ca90f34abc6aa"
+		},
+		{
+			"path": "client/views/reset_password/reset_password_controller.js",
+			"checksum": "08c7d6e06c13fbb5716b78629c8c1782571ad266"
+		},
+		{
+			"path": "client/views/home_private/home_private.html",
+			"checksum": "d8eb99ee53bf0befc2d6639c7c7e64f34c20b528"
+		},
+		{
+			"path": "client/views/home_private/home_private.js",
+			"checksum": "1b4e625fa8656484fcb2239b6a6ebebcefd2db6f"
+		},
+		{
+			"path": "client/views/home_private/home_private_controller.js",
+			"checksum": "55f59969d6597968c2f9b41543c2eea7f1fbd266"
+		},
+		{
+			"path": "client/views/admin/admin.html",
+			"checksum": "84c24cb2f48aa06da66b9c50fc98570b076efbb2"
+		},
+		{
+			"path": "client/views/admin/admin.js",
+			"checksum": "f13550a4a045f79b72da1bc0570aad61a47a8e7a"
+		},
+		{
+			"path": "client/views/admin/admin_controller.js",
+			"checksum": "5ba4b8ba766b73965f089e22d122cfc53f4189f3"
+		},
+		{
+			"path": "client/views/admin/users/users.html",
+			"checksum": "565297a87ee2e0460b6263896ef4d3d98d5a9ad3"
+		},
+		{
+			"path": "client/views/admin/users/users.js",
+			"checksum": "ee02fd190a4cc6992f4cb3ee1467b5a9532252a6"
+		},
+		{
+			"path": "client/views/admin/users/users_controller.js",
+			"checksum": "ac85bc552157485275efe396c06a33a5ea7feaf1"
+		},
+		{
+			"path": "client/views/admin/users/details/details.html",
+			"checksum": "8bc1aa4c970b992822e9bf1d782564dc61fa5892"
+		},
+		{
+			"path": "client/views/admin/users/details/details.js",
+			"checksum": "ea2a14c6e7ebb41001fe4584d554a604316f2412"
+		},
+		{
+			"path": "client/views/admin/users/details/details_controller.js",
+			"checksum": "844944eca9f4a0f6f01ca3dc570a9cfa83f9dd31"
+		},
+		{
+			"path": "client/views/admin/users/insert/insert.html",
+			"checksum": "db638ab2355b6588ebc6dfe09a0c27fc5bb0a8d6"
+		},
+		{
+			"path": "client/views/admin/users/insert/insert.js",
+			"checksum": "44fa1d070fa09badc1805cb215f50739e307bb79"
+		},
+		{
+			"path": "client/views/admin/users/insert/insert_controller.js",
+			"checksum": "fcee5fc5b640b889827a9b897d3401be15b9673c"
+		},
+		{
+			"path": "client/views/admin/users/edit/edit.html",
+			"checksum": "73383043d54e4defc036967b934198d8ebe34a38"
+		},
+		{
+			"path": "client/views/admin/users/edit/edit.js",
+			"checksum": "7b632420a056dac009539f272c634938905f0386"
+		},
+		{
+			"path": "client/views/admin/users/edit/edit_controller.js",
+			"checksum": "13a3961e60216b5a3684fbc34bbdb6fbf8473b1e"
+		},
+		{
+			"path": "client/views/user_settings/user_settings.html",
+			"checksum": "b66575487b5619805f20728f1f80e96e8eef701d"
+		},
+		{
+			"path": "client/views/user_settings/user_settings.js",
+			"checksum": "af54981da1a1a6c1016a6960419b07ff41b10943"
+		},
+		{
+			"path": "client/views/user_settings/user_settings_controller.js",
+			"checksum": "a5071a5cef7951f1dae75852dc95177689ecd806"
+		},
+		{
+			"path": "client/views/user_settings/profile/profile.html",
+			"checksum": "e6c18d3270677717d00c744070c773b2f9ad590c"
+		},
+		{
+			"path": "client/views/user_settings/profile/profile.js",
+			"checksum": "d558e3cb439b8bf4ba17e41ca2efbb32c2f636f2"
+		},
+		{
+			"path": "client/views/user_settings/profile/profile_controller.js",
+			"checksum": "1c37c6368d51445cf5ccf2d5b551c96353ed4050"
+		},
+		{
+			"path": "client/views/user_settings/change_pass/change_pass.html",
+			"checksum": "33e7602afe9295992e2968e9e2f8efd93e3d761a"
+		},
+		{
+			"path": "client/views/user_settings/change_pass/change_pass.js",
+			"checksum": "0c551773e4aeafd9df6b886cbcd91db0da7f7432"
+		},
+		{
+			"path": "client/views/user_settings/change_pass/change_pass_controller.js",
+			"checksum": "71ca8f89ee004189fcdb8600ec07b83c7ad8a192"
+		},
+		{
+			"path": "client/views/logout/logout.html",
+			"checksum": "ffde068f1a1cd15fdfee1b779579db44096d5975"
+		},
+		{
+			"path": "client/views/logout/logout.js",
+			"checksum": "39f0e9440d7fc5808462928c1f300227941c5837"
+		},
+		{
+			"path": "client/views/logout/logout_controller.js",
+			"checksum": "d1db0d31bbaef77ad9693a18d59871cab34a30ef"
+		},
+		{
+			"path": "client/views/materiales/materiales.html",
+			"checksum": "cc9e0c1e425fb7974f1febd03875d96934aa307d"
+		},
+		{
+			"path": "client/views/materiales/materiales.js",
+			"checksum": "a2e6f752da54bfa4d0fbea2c8139ccde490c9982"
+		},
+		{
+			"path": "client/views/materiales/materiales_controller.js",
+			"checksum": "1fd2c407f8408e5e4549a2653fe5a74d0146fcd5"
+		},
+		{
+			"path": "client/views/materiales/details/details.html",
+			"checksum": "7911d01f738d83763397430cd991c5f8a5d7b543"
+		},
+		{
+			"path": "client/views/materiales/details/details.js",
+			"checksum": "d697fdf5205f940ea737006fc9dc44e1cbda8033"
+		},
+		{
+			"path": "client/views/materiales/details/details_controller.js",
+			"checksum": "e9d28214978a66ce046f164514aa551558efb251"
+		},
+		{
+			"path": "client/views/materiales/insert/insert.html",
+			"checksum": "7609a322731ec1ba15fa48af8fa98491e4aa7ce1"
+		},
+		{
+			"path": "client/views/materiales/insert/insert.js",
+			"checksum": "ce7151067519f7e8a25458f5bf625bfb1ae0529b"
+		},
+		{
+			"path": "client/views/materiales/insert/insert_controller.js",
+			"checksum": "bcfea4ef88f3d5b246cf05857d6013dbd46e859f"
+		},
+		{
+			"path": "client/views/materiales/update/update.html",
+			"checksum": "4fd9001443500d16a5d2bd29964ab67e65324591"
+		},
+		{
+			"path": "client/views/materiales/update/update.js",
+			"checksum": "29b85252b81e7f18058bd30ecb6a1b2405320712"
+		},
+		{
+			"path": "client/views/materiales/update/update_controller.js",
+			"checksum": "fc6f96cb8d123b149899fc0d0ca7b1978f85b02d"
+		},
+		{
+			"path": "client/views/proyectos/proyectos.html",
+			"checksum": "2a6f56028db9f7879d8bdd0f49b8137f00e4a150"
+		},
+		{
+			"path": "client/views/proyectos/proyectos.js",
+			"checksum": "88649c4ec4c54359c1ff29218117fceb815761f2"
+		},
+		{
+			"path": "client/views/proyectos/proyectos_controller.js",
+			"checksum": "56565c5822e67207d81b5489fb76018764cd91a0"
+		},
+		{
+			"path": "client/views/proyectos/details/details.html",
+			"checksum": "d94443479f58d1def3b6dfd65af9007701bcc08c"
+		},
+		{
+			"path": "client/views/proyectos/details/details.js",
+			"checksum": "dd4d5ac365c688f31abede252d858f0265ffc5fb"
+		},
+		{
+			"path": "client/views/proyectos/details/details_controller.js",
+			"checksum": "32c49593bec549cfbc34b5752d3cbd8a563b9317"
+		},
+		{
+			"path": "client/views/proyectos/insert/insert.html",
+			"checksum": "36f642e0509b0111a80c6c0f8c59edcf6a2e7de2"
+		},
+		{
+			"path": "client/views/proyectos/insert/insert.js",
+			"checksum": "6de09e570ae42aa016d8a01d08c4de6a3a0b209d"
+		},
+		{
+			"path": "client/views/proyectos/insert/insert_controller.js",
+			"checksum": "0fa3ebbfc2324f28d96b85790739d81aa476e01d"
+		},
+		{
+			"path": "client/views/proyectos/update/update.html",
+			"checksum": "6c13500c8e0a234575aefbbbf8d6b8430b04a3e3"
+		},
+		{
+			"path": "client/views/proyectos/update/update.js",
+			"checksum": "9477e10ff9d52724fe175a0027f27783f4b81c9b"
+		},
+		{
+			"path": "client/views/proyectos/update/update_controller.js",
+			"checksum": "4c600c68fce42a8b341c1282513bbc6ca42f7267"
+		},
+		{
+			"path": "client/views/contratistas/contratistas.html",
+			"checksum": "b48041cadbb0ef8d1dfc5520099af4d711b12629"
+		},
+		{
+			"path": "client/views/contratistas/contratistas.js",
+			"checksum": "c9ccd9c2a3fc57f99c358fc06adca654fd488710"
+		},
+		{
+			"path": "client/views/contratistas/contratistas_controller.js",
+			"checksum": "33ca5126160d3d0fa618d86d26a15cb26b73d24b"
+		},
+		{
+			"path": "client/views/contratistas/details/details.html",
+			"checksum": "387426ee8b26ed41fbc6ed8d510407ea1a099101"
+		},
+		{
+			"path": "client/views/contratistas/details/details.js",
+			"checksum": "2041feb2e2ce47884b378e67fc981db0f63d4ee5"
+		},
+		{
+			"path": "client/views/contratistas/details/details_controller.js",
+			"checksum": "090f557effc0925f2cf04753482b92b777922c32"
+		},
+		{
+			"path": "client/views/contratistas/insert/insert.html",
+			"checksum": "5750ca50cc511c402316afe68c6c854127c7f12c"
+		},
+		{
+			"path": "client/views/contratistas/insert/insert.js",
+			"checksum": "18982521e700e727e985ac77265ced93c49f38d0"
+		},
+		{
+			"path": "client/views/contratistas/insert/insert_controller.js",
+			"checksum": "c36dc870f552bb67b473b46447fdea8a1936efc4"
+		},
+		{
+			"path": "client/views/contratistas/update/update.html",
+			"checksum": "77bb71c12f1069e7f2b3f326f75fa3a98a49ce3c"
+		},
+		{
+			"path": "client/views/contratistas/update/update.js",
+			"checksum": "3396b0bdb59d32acf552194b24f18f183abca177"
+		},
+		{
+			"path": "client/views/contratistas/update/update_controller.js",
+			"checksum": "808d78d441f03e677ee6e83595364235988f30b9"
+		},
+		{
+			"path": "client/views/transacciones/transacciones.html",
+			"checksum": "8603391633608d382d14ef05922d40e09008d3fb"
+		},
+		{
+			"path": "client/views/transacciones/transacciones.js",
+			"checksum": "4582f76da48228f8fd8f58eae18cca334721dfef"
+		},
+		{
+			"path": "client/views/transacciones/transacciones_controller.js",
+			"checksum": "e71ba4d2abf37429a007d6ef8150b6eebdfd1083"
+		},
+		{
+			"path": "client/views/transacciones/details/details.html",
+			"checksum": "346b0d690d0885dcb8cc6079cfffc705643907e0"
+		},
+		{
+			"path": "client/views/transacciones/details/details.js",
+			"checksum": "aa43fadf9ffb913076ea63b7bce770b0424b833e"
+		},
+		{
+			"path": "client/views/transacciones/details/details_controller.js",
+			"checksum": "8ebd56668a005cac8e2fad5142b5c33f6e81cea3"
+		},
+		{
+			"path": "client/views/transacciones/insert/insert.html",
+			"checksum": "d10ed00b3a918bb977ab04b2266d9d746db0b862"
+		},
+		{
+			"path": "client/views/transacciones/insert/insert.js",
+			"checksum": "8c3bb13ea31369f5a65f720a0a066d031a9c940d"
+		},
+		{
+			"path": "client/views/transacciones/insert/insert_controller.js",
+			"checksum": "5cfc9b7a97b838e0ae6a4ae9eeb1f157fd4f5d6b"
+		},
+		{
+			"path": "client/views/transacciones/update/update.html",
+			"checksum": "e306c4505974d93a692bc67b918226696ea1291d"
+		},
+		{
+			"path": "client/views/transacciones/update/update.js",
+			"checksum": "5eec24b74f5c1fb11ed714266d1b1385381615d7"
+		},
+		{
+			"path": "client/views/transacciones/update/update_controller.js",
+			"checksum": "b9f37bcf95889fae354d51fa7e8d667175828917"
+		},
+		{
+			"path": "client/views/proveedores/proveedores.html",
+			"checksum": "ddc86349b9486d7c7ed1a18837585de614930f4f"
+		},
+		{
+			"path": "client/views/proveedores/proveedores.js",
+			"checksum": "d941c2ecc50083d2ec93e82ecc247fb228a6eb43"
+		},
+		{
+			"path": "client/views/proveedores/proveedores_controller.js",
+			"checksum": "ed8bc3ff06376524128881c63e00207d3aa39086"
+		},
+		{
+			"path": "client/views/proveedores/details/details.html",
+			"checksum": "f642bdf4b713b54fd992604152a0417df5af7d29"
+		},
+		{
+			"path": "client/views/proveedores/details/details.js",
+			"checksum": "145cbab542839acc48dcceb82907d7ec8386d007"
+		},
+		{
+			"path": "client/views/proveedores/details/details_controller.js",
+			"checksum": "7b84a72bd18b3320b5cc154aabdecf3ab0e39e0f"
+		},
+		{
+			"path": "client/views/proveedores/insert/insert.html",
+			"checksum": "377c03d24bbefd2c63dedbd9c7cf7e0c24581609"
+		},
+		{
+			"path": "client/views/proveedores/insert/insert.js",
+			"checksum": "39a7cb102632485edb9bcae04cf691ead1a9d315"
+		},
+		{
+			"path": "client/views/proveedores/insert/insert_controller.js",
+			"checksum": "5e779ff26bb9a5b10537cb4703bce1cefcd3fcdf"
+		},
+		{
+			"path": "client/views/proveedores/update/update.html",
+			"checksum": "5ed2c54a14e28d189fb3e3777acdcddcde030327"
+		},
+		{
+			"path": "client/views/proveedores/update/update.js",
+			"checksum": "f18b77226c4c0d4bd7b6de746272ae18bbc1b345"
+		},
+		{
+			"path": "client/views/proveedores/update/update_controller.js",
+			"checksum": "a3f8b919015d8a4a0d84bf4951953a345c3f57a0"
+		},
+		{
+			"path": "both/collections/proyectos.js",
+			"checksum": "484def871852ade80c67d2de4d3ee47145146ca1"
+		},
+		{
+			"path": "server/methods/proyectos.js",
+			"checksum": "618996209def3ac49d70cca976235ce79b2df4b8"
+		},
+		{
+			"path": "server/collections/proyectos.js",
+			"checksum": "6edce566946a18b867e3a79302af47f22d61c036"
+		},
+		{
+			"path": "server/publish/proyectos.js",
+			"checksum": "cd666f2f66d460942ef52e45f9b60ae8cdb71935"
+		},
+		{
+			"path": "both/collections/contratistas.js",
+			"checksum": "e6f3b83c28a0b464f038f6c4a4b2eb1dc7a486b4"
+		},
+		{
+			"path": "server/methods/contratistas.js",
+			"checksum": "733c34cb3d5d9e815e83985c44e12526521eae29"
+		},
+		{
+			"path": "server/collections/contratistas.js",
+			"checksum": "06946b633047bcf0f46578e87b466e1b96e7b693"
+		},
+		{
+			"path": "server/publish/contratistas.js",
+			"checksum": "6ab2ada83258695bb6b87a3d8f9fafd899cecdda"
+		},
+		{
+			"path": "both/collections/proveedores.js",
+			"checksum": "4875ae18f6cf38b5c3bd06c0ec3e6666b2869512"
+		},
+		{
+			"path": "server/methods/proveedores.js",
+			"checksum": "136e0e462e3f928e1db7c0891c18604f32051f36"
+		},
+		{
+			"path": "server/collections/proveedores.js",
+			"checksum": "f6c4b4c73aa9ac0c411b14430b7842f3e4a3e453"
+		},
+		{
+			"path": "server/publish/proveedores.js",
+			"checksum": "19dbedd0b085f4a2726c4930fca09e27503415b1"
+		},
+		{
+			"path": "both/collections/materiales.js",
+			"checksum": "5a74c82785e1b0ee8f77f91e072c3bf675fb92e3"
+		},
+		{
+			"path": "server/methods/materiales.js",
+			"checksum": "e7480ef79f46b5da3fb9edf64b4c7a7e4f793594"
+		},
+		{
+			"path": "server/collections/materiales.js",
+			"checksum": "e505654770175fae3f864b671a4e230823232746"
+		},
+		{
+			"path": "server/publish/materiales.js",
+			"checksum": "72af874fb86433cb26eb4ea2acc049142b5f5b20"
+		},
+		{
+			"path": "both/collections/inventario.js",
+			"checksum": "779303988b44693e042438f0612840e5661de889"
+		},
+		{
+			"path": "server/methods/inventario.js",
+			"checksum": "300a23e3e5e2f278b4ca20806052d1f898a69c99"
+		},
+		{
+			"path": "server/collections/inventario.js",
+			"checksum": "249e596fb958bffcbd2d20ea69022ed733149754"
+		},
+		{
+			"path": "server/publish/inventario.js",
+			"checksum": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+		},
+		{
+			"path": "both/collections/transacciones.js",
+			"checksum": "8eae6379026248752128fdd2bd65502216e3e5f1"
+		},
+		{
+			"path": "server/methods/transacciones.js",
+			"checksum": "a628be7c7c21c364cc12e457d4a57acffab31fbb"
+		},
+		{
+			"path": "server/collections/transacciones.js",
+			"checksum": "e85ae4514851899b0d79fad50b939ff4931a11ec"
+		},
+		{
+			"path": "server/publish/transacciones.js",
+			"checksum": "341e1ab27ecd9d6cdee71f6b74d385f2b800adc5"
+		},
+		{
+			"path": "both/collections/requisiciones.js",
+			"checksum": "d881ab86c75e7ab811128db6203a751939cff946"
+		},
+		{
+			"path": "server/methods/requisiciones.js",
+			"checksum": "c592cf72ff7900f1db2d61b8b9ee5c599bdb9876"
+		},
+		{
+			"path": "server/collections/requisiciones.js",
+			"checksum": "5ff987021300f1512735e39010f5dae845322fe4"
+		},
+		{
+			"path": "server/publish/requisiciones.js",
+			"checksum": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+		},
+		{
+			"path": "both/collections/requisiciones_items.js",
+			"checksum": "8c1aad2cb60442ee1fcc8aa2602e1b52032cf6e0"
+		},
+		{
+			"path": "server/methods/requisiciones_items.js",
+			"checksum": "41eee99336171a35e2a20e4b5327a9f8a9a1c237"
+		},
+		{
+			"path": "server/collections/requisiciones_items.js",
+			"checksum": "972c01e2f9d47fb39eb503ac589fbd1b0b024d62"
+		},
+		{
+			"path": "server/publish/requisiciones_items.js",
+			"checksum": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+		},
+		{
+			"path": "both/collections/ordenes.js",
+			"checksum": "81743e2d5ba2259b447ce5aff379cac5691e55d8"
+		},
+		{
+			"path": "server/methods/ordenes.js",
+			"checksum": "487effc3e14054c77aa1472d2449ac129e3c036b"
+		},
+		{
+			"path": "server/collections/ordenes.js",
+			"checksum": "a6d821e7b8c4629baa1f963cd861882afac896c2"
+		},
+		{
+			"path": "server/publish/ordenes.js",
+			"checksum": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+		},
+		{
+			"path": "both/collections/ordenes_items.js",
+			"checksum": "a1dc6ea54561fe9b396b35e6eb502c52708d428f"
+		},
+		{
+			"path": "server/methods/ordenes_items.js",
+			"checksum": "7b2033ecffa86bf568f142e732d2485b2accfed0"
+		},
+		{
+			"path": "server/collections/ordenes_items.js",
+			"checksum": "f86714f8db13e7c67bb4338c8444542742dc146a"
+		},
+		{
+			"path": "server/publish/ordenes_items.js",
+			"checksum": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+		},
+		{
+			"path": "client/styles/styles/animate_visible.js",
+			"checksum": "f2f5445a4f437805ef88b61169e3c5386ee67911"
+		},
+		{
+			"path": "lib/string_utils.js",
+			"checksum": "6bf8f64bf32bd7aff71cbeeba23df9fb8282a12c"
+		},
+		{
+			"path": "lib/case_utils.js",
+			"checksum": "552ee22b40c83544230a1132b3ee8e875270ec2a"
+		},
+		{
+			"path": "lib/object_utils.js",
+			"checksum": "0660e53aff2c1841d88a344b80af744fb8c9b15c"
+		},
+		{
+			"path": "client/lib/http_utils.js",
+			"checksum": "740095219b687a460a789da9ab9ef4d64a111b9c"
+		},
+		{
+			"path": "client/lib/router_utils.js",
+			"checksum": "0d46da090113fb0a55b452c6ff65dfef7a9d28d5"
+		},
+		{
+			"path": "client/components/confirmation_dialog/confirmation_dialog.html",
+			"checksum": "27a5db15d1de639e2b1a2a480f136332084d2c5b"
+		},
+		{
+			"path": "client/components/confirmation_dialog/confirmation_dialog.js",
+			"checksum": "7ab46ff82b06a36fc2bdbe30e7bd164b660dfc1b"
+		},
+		{
+			"path": "client/components/input_dialog/input_dialog.html",
+			"checksum": "4717e6ebb273c655f5f6d5c133a5814f5deee6c1"
+		},
+		{
+			"path": "client/components/input_dialog/input_dialog.js",
+			"checksum": "62dce4c81f8955ca99e429737ae41eb8416bf632"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3/custom.bootstrap.import.less",
+			"checksum": "8007cd69773c1c62284460f7c0fd8310e7f60094"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3/custom.bootstrap.json",
+			"checksum": "59c3803dde72dfd34e95a52dc4f5cae65018ec38"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3/custom.bootstrap.less",
+			"checksum": "a114a65d406f228e4137a3fb7b33047c40a5cd68"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3/custom.bootstrap.mixins.import.less",
+			"checksum": "b53332a4c7dffc57aefda1db82b4e09258dad07a"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput.css",
+			"checksum": "30ba45c948bcb125cf0cb550b4a9d2f13ffcc710"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput.js",
+			"checksum": "b6c83cb478c232284b8b6cae90d0ec2840d93332"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_cz.js",
+			"checksum": "146a2a2bd0e89b62b775eee929907970e875ddf6"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_de.js",
+			"checksum": "fcad7c9406cb7ab1959ee5a62825a62b905f34a2"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_el.js",
+			"checksum": "d00eebe17389c41dbdfdd5611573ba52169f16eb"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_es.js",
+			"checksum": "6eb5775359ee3e6199962d05fb6a2ddf79426766"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_fr.js",
+			"checksum": "aea834881f99fe187153560b32011c2af7f56092"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_hu.js",
+			"checksum": "500bfd774110b73e07e9f4e23a4cbf9c896fbcea"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_it.js",
+			"checksum": "09d41c11dadf15f197bd443f5ad01a68e3408bde"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_LANG.js",
+			"checksum": "e80901eda8d09ee66e3375ddd6d7f7a53dbfcda8"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_nl.js",
+			"checksum": "106dfa775832df6830675c8927603a813063986c"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_pl.js",
+			"checksum": "77ce969c9532dc4cda50d57bad7c8e8c9e792386"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_pt-BR.js",
+			"checksum": "8caeab2c4b40a90eba4412eb5a31c76405e5a04a"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_pt.js",
+			"checksum": "f1d3b0c83a6a10b6e1cd7b8f523a98a7a51720ac"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_ro.js",
+			"checksum": "7fcbd870c67fbd4646b6b53c4e07f84ebaf6ebd1"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_ru.js",
+			"checksum": "4939e4b72d235b9a68602aba3501bd72bde77611"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_sk.js",
+			"checksum": "1dc9d65243156006cf762ed85cdf36501c27f38a"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_sr.js",
+			"checksum": "50ac58590814ab9959e34d94a4b2bb8cf9be35b9"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_th.js",
+			"checksum": "05fec04f2b334bd579126eeb54321fbec516470f"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_tr.js",
+			"checksum": "25e2ea3f23c594180a3496f814ae907343de1add"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_uk.js",
+			"checksum": "f5f6b5052a111fa87a5da8608a5d137d4116e6c5"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/fileinput_locale_zh.js",
+			"checksum": "f477aede4974871fc0ba71d3ed4f90d8b9f1a74e"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-tagsinput/bootstrap-tagsinput.css",
+			"checksum": "49937990ee001ae632d23d1e9bb71dc4460ac7c1"
+		},
+		{
+			"path": "client/styles/framework/bootstrap3-plugins/bootstrap-tagsinput/bootstrap-tagsinput.js",
+			"checksum": "6f25a97cb1bb9b8edcf0cb297eabfc9f94f1a80d"
+		},
+		{
+			"path": "client/lib/form_utils.js",
+			"checksum": "ac523c7384145b2d294b67946bf07b63c69cfe4e"
+		}
+	],
+	"output_directories": [
+		"both/",
+		"both/collections/",
+		"both/joins/",
+		"both/lib/",
+		"client/",
+		"client/components/",
+		"client/components/confirmation_dialog/",
+		"client/components/input_dialog/",
+		"client/lib/",
+		"client/lib/globals/",
+		"client/styles/",
+		"client/styles/framework/",
+		"client/styles/framework/bootstrap3-plugins/bootstrap-fileinput/",
+		"client/styles/framework/bootstrap3-plugins/bootstrap-tagsinput/",
+		"client/styles/framework/bootstrap3/",
+		"client/styles/styles/",
+		"client/styles/styles/theme/",
+		"client/views/",
+		"client/views/admin/",
+		"client/views/admin/users/",
+		"client/views/admin/users/details/",
+		"client/views/admin/users/edit/",
+		"client/views/admin/users/insert/",
+		"client/views/contratistas/",
+		"client/views/contratistas/details/",
+		"client/views/contratistas/insert/",
+		"client/views/contratistas/update/",
+		"client/views/forgot_password/",
+		"client/views/home_private/",
+		"client/views/home_public/",
+		"client/views/layout/",
+		"client/views/loading/",
+		"client/views/login/",
+		"client/views/logout/",
+		"client/views/materiales/",
+		"client/views/materiales/details/",
+		"client/views/materiales/insert/",
+		"client/views/materiales/update/",
+		"client/views/not_found/",
+		"client/views/proveedores/",
+		"client/views/proveedores/details/",
+		"client/views/proveedores/insert/",
+		"client/views/proveedores/update/",
+		"client/views/proyectos/",
+		"client/views/proyectos/details/",
+		"client/views/proyectos/insert/",
+		"client/views/proyectos/update/",
+		"client/views/register/",
+		"client/views/reset_password/",
+		"client/views/transacciones/",
+		"client/views/transacciones/details/",
+		"client/views/transacciones/insert/",
+		"client/views/transacciones/update/",
+		"client/views/user_settings/",
+		"client/views/user_settings/change_pass/",
+		"client/views/user_settings/profile/",
+		"client/views/verify_email/",
+		"imports/",
+		"lib/",
+		"packages/",
+		"private/",
+		"public/",
+		"public/fonts/",
+		"public/images/",
+		"server/",
+		"server/collections/",
+		"server/controllers/",
+		"server/lib/",
+		"server/methods/",
+		"server/publish/"
+	],
+	"packages": {
+		"meteor": [
+			"dburles:google-maps",
+			"natestrauser:animate-css",
+			"accounts-password",
+			"blaze-html-templates",
+			"accounts-base",
+			"http",
+			"email",
+			"spiderable",
+			"ejson",
+			"random",
+			"session",
+			"iron:router",
+			"fortawesome:fontawesome",
+			"matb33:collection-hooks",
+			"perak:user-roles",
+			"copleykj:livestamp",
+			"less",
+			"nemo64:bootstrap@=3.3.5_2",
+			"reactive-dict",
+			"mizzao:bootboxjs",
+			"momentjs:moment",
+			"rajit:bootstrap3-datepicker"
+		],
+		"npm": [
+			"bcrypt"
+		],
+		"mrt": [
+		]
+	}
+}

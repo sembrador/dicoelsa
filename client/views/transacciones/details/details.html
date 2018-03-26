@@ -1,0 +1,142 @@
+<template name="TransaccionesDetails">
+	<div class="page-container container" id="content">
+		<div class="row" id="title_row">
+			<div class="col-md-12">
+			</div>
+		</div>
+		{{> TransaccionesDetailsForm}}
+	</div>
+</template>
+
+<template name="TransaccionesDetailsForm">
+	<div id="transacciones-details-form" class="">
+		<h2 id="component-title">
+			<a href="#" id="form-back-button" class="btn btn-default" title="back">
+				<span class="fa fa-chevron-left">
+				</span>
+			</a>
+			Transaccion Details
+		</h2>
+		<form role="form">
+			{{#if errorMessage}}
+			<div class="alert alert-warning">
+				{{errorMessage}}
+			</div>
+			{{/if}}
+
+			{{#if infoMessage}}
+			<div class="alert alert-success">
+				{{infoMessage}}
+			</div>
+			{{/if}}
+			<div class="form-group  field-referencia">
+				<label for="referencia">
+					REFERENCIA
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-referencia">
+						{{transaccion.referencia}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-fecha">
+				<label for="fecha">
+					FECHA
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-fecha">
+						{{formatDate transaccion.fecha 'DD/MM/YYYY'}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-numero">
+				<label for="numero">
+					NUMERO
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-numero">
+						{{transaccion.numero}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-bodega">
+				<label for="bodega">
+					BODEGA
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-bodega">
+						{{transaccion.bodega}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-tipo">
+				<label for="tipo">
+					TIPO
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-tipo">
+						{{transaccion.tipo}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-cantidad">
+				<label for="cantidad">
+					CANTIDAD
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-cantidad">
+						{{transaccion.cantidad}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-costo">
+				<label for="costo">
+					COSTO
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-costo">
+						{{transaccion.costo}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-saldo">
+				<label for="saldo">
+					SALDO
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-saldo">
+						{{transaccion.saldo}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-proveedor">
+				<label for="proveedor">
+					PROVEEDOR
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-proveedor">
+						{{transaccion.proveedor}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-transaccion">
+				<label for="transaccion">
+					TRANSACCION
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-transaccion">
+						{{transaccion.transaccion}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="submit-div">
+					<a href="#" id="form-close-button" class="btn btn-primary">
+						OK
+					</a>
+				</div>
+			</div>
+		</form>
+	</div>
+</template>
+

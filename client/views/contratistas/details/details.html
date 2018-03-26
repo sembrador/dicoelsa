@@ -1,0 +1,121 @@
+<template name="ContratistasDetails">
+	<div class="page-container container" id="content">
+		<div class="row" id="title_row">
+			<div class="col-md-12">
+			</div>
+		</div>
+		{{> ContratistasDetailsForm}}
+	</div>
+</template>
+
+<template name="ContratistasDetailsForm">
+	<div id="contratistas-details-form" class="">
+		<h2 id="component-title">
+			<a href="#" id="form-back-button" class="btn btn-default" title="back">
+				<span class="fa fa-chevron-left">
+				</span>
+			</a>
+			Contratista Details
+		</h2>
+		<form role="form">
+			{{#if errorMessage}}
+			<div class="alert alert-warning">
+				{{errorMessage}}
+			</div>
+			{{/if}}
+
+			{{#if infoMessage}}
+			<div class="alert alert-success">
+				{{infoMessage}}
+			</div>
+			{{/if}}
+			<div class="form-group  field-descripcion">
+				<label for="descripcion">
+					DESCRIPCION
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-descripcion">
+						{{contratista.descripcion}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-ruc">
+				<label for="ruc">
+					RUC
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-ruc">
+						{{contratista.ruc}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-telefonos">
+				<label for="telefonos">
+					TELEFONOS
+				</label>
+				<div class="input-div">
+					<table class="table table-striped">
+						<thead>
+							{{#if telefonosCrudItems}}
+							<tr class="crud-table-header">
+								<th>
+									CELULAR
+								</th>
+								<th>
+									TRABAJO
+								</th>
+								<th>
+									CASA
+								</th>
+								<th>
+									OTRO
+								</th>
+							</tr>
+							{{/if}}
+						</thead>
+						<tbody>
+							{{#each telefonosCrudItems}}
+							<tr class="crud-table-row">
+								<td>
+									{{celular}}
+								</td>
+								<td>
+									{{trabajo}}
+								</td>
+								<td>
+									{{casa}}
+								</td>
+								<td>
+									{{otro}}
+								</td>
+							</tr>
+							{{/each}}
+						</tbody>
+					</table>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-correo">
+				<label for="correo">
+					EMAIL
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-correo">
+						{{contratista.correo}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="submit-div">
+					<a href="#" id="form-close-button" class="btn btn-primary">
+						OK
+					</a>
+				</div>
+			</div>
+		</form>
+	</div>
+</template>
+

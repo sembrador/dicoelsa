@@ -1,0 +1,234 @@
+<template name="ContratistasInsert">
+	<div class="page-container container" id="content">
+		<div class="row" id="title_row">
+			<div class="col-md-12">
+			</div>
+		</div>
+		{{> ContratistasInsertForm}}
+		<div class="modal crud-insert-form-container" id="field-telefonos-insert-form" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-body">
+						{{> ContratistasInsertFieldTelefonosInsertFormContainerFieldTelefonosInsertForm}}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="ContratistasInsertForm">
+	<div id="contratistas-insert-form" class="">
+		<h2 id="component-title">
+			New Contratista
+		</h2>
+		<form role="form">
+			{{#if errorMessage}}
+			<div class="alert alert-warning">
+				{{errorMessage}}
+			</div>
+			{{/if}}
+
+			{{#if infoMessage}}
+			<div class="alert alert-success">
+				{{infoMessage}}
+			</div>
+			{{/if}}
+			<div class="form-group  field-descripcion">
+				<label for="descripcion">
+					DESCRIPCION
+				</label>
+				<div class="input-div">
+					<input type="text" name="descripcion" value="" class="form-control " autofocus="autofocus" required="required" data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-ruc">
+				<label for="ruc">
+					RUC
+				</label>
+				<div class="input-div">
+					<input type="text" name="ruc" value="" class="form-control " required="required" data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-telefonos">
+				<label for="telefonos">
+					TELEFONOS
+				</label>
+				<div class="input-div">
+					<table class="table table-striped">
+						<thead>
+							<tr class="crud-table-controls">
+								<td colspan="4">
+									<button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#field-telefonos-insert-form">
+										<span class="fa fa-plus">
+										</span>
+										AGREGAR
+									</button>
+								</td>
+							</tr>
+							{{#if telefonosCrudItems}}
+							<tr class="crud-table-header">
+								<th>
+									CELULAR
+								</th>
+								<th>
+									TRABAJO
+								</th>
+								<th>
+									CASA
+								</th>
+								<th>
+									OTRO
+								</th>
+								<th>
+									&nbsp;
+								</th>
+							</tr>
+							{{/if}}
+						</thead>
+						<tbody>
+							{{#each telefonosCrudItems}}
+							<tr class="crud-table-row">
+								<td>
+									{{celular}}
+								</td>
+								<td>
+									{{trabajo}}
+								</td>
+								<td>
+									{{casa}}
+								</td>
+								<td>
+									{{otro}}
+								</td>
+								<td class="td-icon delete-icon">
+									<span class="fa fa-trash-o" title="Delete">
+									</span>
+								</td>
+							</tr>
+							{{/each}}
+						</tbody>
+					</table>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-correo">
+				<label for="correo">
+					EMAIL
+				</label>
+				<div class="input-div">
+					<input type="text" name="correo" value="" class="form-control " required="required" data-type="email">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="submit-div">
+					<a href="#" id="form-cancel-button" class="btn btn-default">
+						Cancel
+					</a>
+					<button id="form-submit-button" class="btn btn-success" type="submit">
+						<span class="fa fa-check">
+						</span>
+						Save
+					</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</template>
+
+<template name="ContratistasInsertFieldTelefonosInsertFormContainerFieldTelefonosInsertForm">
+	<div id="contratistas-insert-field-telefonos-insert-form-container-field-telefonos-insert-form" class="">
+		<h2 id="component-title">
+			AGREGAR
+		</h2>
+		<form role="form">
+			{{#if errorMessage}}
+			<div class="alert alert-warning">
+				{{errorMessage}}
+			</div>
+			{{/if}}
+
+			{{#if infoMessage}}
+			<div class="alert alert-success">
+				{{infoMessage}}
+			</div>
+			{{/if}}
+			<div class="form-group text field-celular">
+				<label for="celular">
+					CELULAR
+				</label>
+				<div class="input-div">
+					<input type="text" name="celular" value="" class="form-control " autofocus="autofocus" required="required" data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group text field-trabajo">
+				<label for="trabajo">
+					TRABAJO
+				</label>
+				<div class="input-div">
+					<input type="text" name="trabajo" value="" class="form-control " required="required" data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group text field-casa">
+				<label for="casa">
+					CASA
+				</label>
+				<div class="input-div">
+					<input type="text" name="casa" value="" class="form-control " required="required" data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group text field-otro">
+				<label for="otro">
+					OTRO
+				</label>
+				<div class="input-div">
+					<input type="text" name="otro" value="" class="form-control " required="required" data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="submit-div">
+					<a href="#" id="form-cancel-button" class="btn btn-default">
+						Cancel
+					</a>
+					<button id="form-submit-button" class="btn btn-success" type="submit">
+						<span class="fa fa-check">
+						</span>
+						Save
+					</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</template>
+
