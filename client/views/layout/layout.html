@@ -5,6 +5,7 @@
 		DICOELSA Web
 	</title>
 </head>
+
 <template name="layout">
 	{{#if isPrivateZone}}
 		{{> PrivateLayout privateData}}
@@ -91,7 +92,7 @@
 		<li id="menu-item-simple" class="{{menuItemClass 'home_public'}}">
 			<a href="{{pathFor 'home_public'}}">
 				<span class="item-title">
-					Home
+					Inicio
 				</span>
 			</a>
 		</li>
@@ -103,14 +104,14 @@
 		<li id="menu-item-simple" class="{{menuItemClass 'register'}}">
 			<a href="{{pathFor 'register'}}">
 				<span class="item-title">
-					Register
+					Registro
 				</span>
 			</a>
 		</li>
 		<li id="menu-item-simple" class="{{menuItemClass 'login'}}">
 			<a href="{{pathFor 'login'}}">
 				<span class="item-title">
-					Login
+					Entrar
 				</span>
 			</a>
 		</li>
@@ -161,42 +162,42 @@
 				<span class="fa fa-home">
 				</span>
 				<span class="item-title">
-					&nbsp;INICIO
+					&nbsp;Inicio
 				</span>
 			</a>
 		</li>
 		<li id="menu-item-simple" class="{{menuItemClass 'proyectos'}}">
 			<a href="{{pathFor 'proyectos'}}">
 				<span class="item-title">
-					PROYECTOS
+					Proyectos
 				</span>
 			</a>
 		</li>
 		<li id="menu-item-simple" class="{{menuItemClass 'contratistas'}}">
 			<a href="{{pathFor 'contratistas'}}">
 				<span class="item-title">
-					CONTRATISTAS
+					Contratistas
 				</span>
 			</a>
 		</li>
 		<li id="menu-item-simple" class="{{menuItemClass 'materiales'}}">
 			<a href="{{pathFor 'materiales'}}">
 				<span class="item-title">
-					MATERIALES
+					Materiales
 				</span>
 			</a>
 		</li>
 		<li id="menu-item-simple" class="{{menuItemClass 'proveedores'}}">
 			<a href="{{pathFor 'proveedores'}}">
 				<span class="item-title">
-					PROVEEDORES
+					Proveedores
 				</span>
 			</a>
 		</li>
 		<li id="menu-item-simple" class="{{menuItemClass 'transacciones'}}">
 			<a href="{{pathFor 'transacciones'}}">
 				<span class="item-title">
-					TRANSACCIONES
+					Transacciones
 				</span>
 			</a>
 		</li>
@@ -228,14 +229,14 @@
 				<li class="{{menuItemClass 'user_settings'}}">
 					<a href="{{pathFor 'user_settings'}}">
 						<span class="item-title">
-							Settings
+							Preferencias
 						</span>
 					</a>
 				</li>
 				<li class="{{menuItemClass 'logout'}}">
 					<a href="{{pathFor 'logout'}}">
 						<span class="item-title">
-							Logout
+							Salir
 						</span>
 					</a>
 				</li>

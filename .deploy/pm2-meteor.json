@@ -1,0 +1,28 @@
+{
+  "appName": "DICOELSA Web",
+  "appLocation": {
+    "local": "./"
+  },
+  "meteorSettingsLocation": "./",
+  "meteorSettingsInRepo": false,
+  "prebuildScript": "",
+  "meteorBuildFlags": "--architecture os.linux.x86_64",
+  "env": {
+    "ROOT_URL": "https://web.dicoelsa.com",
+    "PORT": "8081",
+    "MONGO_URL": "mongodb://appUser:Zxcvb1234!@localhost:27017/castleSoftDb"
+  },
+  "server": {
+    "host": "web.dicoelsa.com",
+    "username": "usuario",
+    "password": "Zxcvb1234!",
+    "deploymentDir": "/home/usuario/www/castle-soft/",
+    "loadProfile": "",
+    "nvm": {
+      "bin": "",
+      "use": ""
+    },
+    "exec_mode": "cluster_mode",
+    "instances": 1
+  }
+}
