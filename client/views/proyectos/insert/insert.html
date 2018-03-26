@@ -1,0 +1,174 @@
+<template name="ProyectosInsert">
+	<div class="page-container container" id="content">
+		<div class="row" id="title_row">
+			<div class="col-md-12">
+			</div>
+		</div>
+		{{> ProyectosInsertForm}}
+		<div class="modal crud-insert-form-container" id="field-contacto-insert-form" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-body">
+						{{> ProyectosInsertFieldContactoInsertFormContainerFieldContactoInsertForm}}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="ProyectosInsertForm">
+	<div id="proyectos-insert-form" class="">
+		<h2 id="component-title">
+			New Proyecto
+		</h2>
+		<form role="form">
+			{{#if errorMessage}}
+			<div class="alert alert-warning">
+				{{errorMessage}}
+			</div>
+			{{/if}}
+
+			{{#if infoMessage}}
+			<div class="alert alert-success">
+				{{infoMessage}}
+			</div>
+			{{/if}}
+			<div class="form-group  field-descripcion">
+				<label for="descripcion">
+					NOMBRE
+				</label>
+				<div class="input-div">
+					<input type="text" name="descripcion" value="" class="form-control " autofocus="autofocus" required="required" data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-contacto">
+				<label for="contacto">
+					CONTACTO
+				</label>
+				<div class="input-div">
+					<table class="table table-striped">
+						<thead>
+							<tr class="crud-table-controls">
+								<td colspan="0">
+									<button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#field-contacto-insert-form">
+										<span class="fa fa-plus">
+										</span>
+										AGREGAR
+									</button>
+								</td>
+							</tr>
+							{{#if contactoCrudItems}}
+							<tr class="crud-table-header">
+								<th>
+									&nbsp;
+								</th>
+							</tr>
+							{{/if}}
+						</thead>
+						<tbody>
+							{{#each contactoCrudItems}}
+							<tr class="crud-table-row">
+								<td class="td-icon delete-icon">
+									<span class="fa fa-trash-o" title="Delete">
+									</span>
+								</td>
+							</tr>
+							{{/each}}
+						</tbody>
+					</table>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-ubicacion">
+				<label for="ubicacion">
+					UBICACION
+				</label>
+				<div class="input-div">
+					<textarea class="form-control " name="ubicacion"></textarea>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-geo_lon">
+				<label for="geo_lon">
+					LONGITUD
+				</label>
+				<div class="input-div">
+					<input type="text" name="geo_lon" value="" class="form-control " data-type="integer">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-geo_lat">
+				<label for="geo_lat">
+					LATITUD
+				</label>
+				<div class="input-div">
+					<input type="text" name="geo_lat" value="" class="form-control " data-type="integer">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="submit-div">
+					<a href="#" id="form-cancel-button" class="btn btn-default">
+						Cancel
+					</a>
+					<button id="form-submit-button" class="btn btn-success" type="submit">
+						<span class="fa fa-check">
+						</span>
+						Save
+					</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</template>
+
+<template name="ProyectosInsertFieldContactoInsertFormContainerFieldContactoInsertForm">
+	<div id="proyectos-insert-field-contacto-insert-form-container-field-contacto-insert-form" class="">
+		<h2 id="component-title">
+			AGREGAR
+		</h2>
+		<form role="form">
+			{{#if errorMessage}}
+			<div class="alert alert-warning">
+				{{errorMessage}}
+			</div>
+			{{/if}}
+
+			{{#if infoMessage}}
+			<div class="alert alert-success">
+				{{infoMessage}}
+			</div>
+			{{/if}}
+			<div class="form-group">
+				<div class="submit-div">
+					<a href="#" id="form-cancel-button" class="btn btn-default">
+						Cancel
+					</a>
+					<button id="form-submit-button" class="btn btn-success" type="submit">
+						<span class="fa fa-check">
+						</span>
+						Save
+					</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</template>
+

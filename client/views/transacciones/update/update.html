@@ -1,0 +1,153 @@
+<template name="TransaccionesUpdate">
+	<div class="page-container container" id="content">
+		<div class="row" id="title_row">
+			<div class="col-md-12">
+			</div>
+		</div>
+		{{> TransaccionesUpdateForm}}
+	</div>
+</template>
+
+<template name="TransaccionesUpdateForm">
+	<div id="transacciones-update-form" class="">
+		<h2 id="component-title">
+			Edit Transaccion
+		</h2>
+		<form role="form">
+			{{#if errorMessage}}
+			<div class="alert alert-warning">
+				{{errorMessage}}
+			</div>
+			{{/if}}
+
+			{{#if infoMessage}}
+			<div class="alert alert-success">
+				{{infoMessage}}
+			</div>
+			{{/if}}
+			<div class="form-group  field-referencia">
+				<label for="referencia">
+					REFERENCIA
+				</label>
+				<div class="input-div">
+					<select class="form-control " name="referencia" data-type="string" required="required" autofocus="autofocus">
+						{{#each material_list}}
+						<option value="{{referencia}}" {{optionIsSelected ../transaccion.referencia referencia}}>							{{descripcion}}</option>
+						{{/each}}
+					</select>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-fecha">
+				<label for="fecha">
+					FECHA
+				</label>
+				<div class="input-div">
+					<div class="input-group date">
+						<input type="text" name="fecha" value="{{formatDate transaccion.fecha 'DD/MM/YYYY'}}" class="form-control " required="required" data-type="date" data-format="DD/MM/YYYY">
+						<span class="input-group-addon">
+							<i class="fa fa-calendar">
+							</i>
+						</span>
+					</div>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-numero">
+				<label for="numero">
+					NUMERO
+				</label>
+				<div class="input-div">
+					<input type="text" name="numero" value="{{transaccion.numero}}" class="form-control " required="required" data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-bodega">
+				<label for="bodega">
+					BODEGA
+				</label>
+				<div class="input-div">
+					<input type="text" name="bodega" value="{{transaccion.bodega}}" class="form-control " required="required" data-type="string">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-tipo">
+				<label for="tipo">
+					TIPO
+				</label>
+				<div class="input-div">
+					<select class="form-control " name="tipo" data-type="string" required="required">
+						<option value="E" {{optionIsSelected transaccion.tipo "E"}}>							ENTRADA</option>
+						<option value="S" {{optionIsSelected transaccion.tipo "S"}}>							SALIDA</option>
+					</select>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-cantidad">
+				<label for="cantidad">
+					CANTIDAD
+				</label>
+				<div class="input-div">
+					<input type="text" name="cantidad" value="{{transaccion.cantidad}}" class="form-control " required="required" data-type="integer">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-costo">
+				<label for="costo">
+					COSTO
+				</label>
+				<div class="input-div">
+					<input type="text" name="costo" value="{{transaccion.costo}}" class="form-control " required="required" data-type="float">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-proveedor">
+				<label for="proveedor">
+					PROVEEDOR
+				</label>
+				<div class="input-div">
+					<select class="form-control " name="proveedor" data-type="string" required="required">
+					</select>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="submit-div">
+					<a href="#" id="form-cancel-button" class="btn btn-default">
+						Cancel
+					</a>
+					<button id="form-submit-button" class="btn btn-success" type="submit">
+						<span class="fa fa-check">
+						</span>
+						Save
+					</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</template>
+

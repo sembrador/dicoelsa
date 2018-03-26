@@ -1,0 +1,154 @@
+<template name="ProveedoresDetails">
+	<div class="page-container container" id="content">
+		<div class="row" id="title_row">
+			<div class="col-md-12">
+			</div>
+		</div>
+		{{> ProveedoresDetailsForm}}
+	</div>
+</template>
+
+<template name="ProveedoresDetailsForm">
+	<div id="proveedores-details-form" class="">
+		<h2 id="component-title">
+			<a href="#" id="form-back-button" class="btn btn-default" title="back">
+				<span class="fa fa-chevron-left">
+				</span>
+			</a>
+			Proveedor Details
+		</h2>
+		<form role="form">
+			{{#if errorMessage}}
+			<div class="alert alert-warning">
+				{{errorMessage}}
+			</div>
+			{{/if}}
+
+			{{#if infoMessage}}
+			<div class="alert alert-success">
+				{{infoMessage}}
+			</div>
+			{{/if}}
+			<div class="form-group  field-referencia">
+				<label for="referencia">
+					REFERENCIA
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-referencia">
+						{{proveedor.referencia}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-descripcion">
+				<label for="descripcion">
+					DESCRIPCION
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-descripcion">
+						{{proveedor.descripcion}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-direccion">
+				<label for="direccion">
+					DIRECCION
+				</label>
+				<div class="input-div">
+					<table class="table table-striped">
+						<thead>
+							{{#if direccionCrudItems}}
+							<tr class="crud-table-header">
+								<th>
+									CALLE
+								</th>
+								<th>
+									PROVINCIA
+								</th>
+								<th>
+									DISTRITO
+								</th>
+								<th>
+									CORREGIMIENTO
+								</th>
+							</tr>
+							{{/if}}
+						</thead>
+						<tbody>
+							{{#each direccionCrudItems}}
+							<tr class="crud-table-row">
+								<td>
+									{{calle}}
+								</td>
+								<td>
+									{{provincia}}
+								</td>
+								<td>
+									{{distrito}}
+								</td>
+								<td>
+									{{corregimiento}}
+								</td>
+							</tr>
+							{{/each}}
+						</tbody>
+					</table>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group text field-telefono">
+				<label for="telefono">
+					TELEFONO
+				</label>
+				<div class="input-div">
+					<table class="table table-striped">
+						<thead>
+							{{#if telefonoCrudItems}}
+							<tr class="crud-table-header">
+								<th>
+									NEGOCIO
+								</th>
+								<th>
+									CELULAR
+								</th>
+								<th>
+									OTRO
+								</th>
+							</tr>
+							{{/if}}
+						</thead>
+						<tbody>
+							{{#each telefonoCrudItems}}
+							<tr class="crud-table-row">
+								<td>
+									{{fijo}}
+								</td>
+								<td>
+									{{celular}}
+								</td>
+								<td>
+									{{otro}}
+								</td>
+							</tr>
+							{{/each}}
+						</tbody>
+					</table>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="submit-div">
+					<a href="#" id="form-close-button" class="btn btn-primary">
+						OK
+					</a>
+				</div>
+			</div>
+		</form>
+	</div>
+</template>
+

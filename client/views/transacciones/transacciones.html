@@ -1,0 +1,138 @@
+<template name="Transacciones">
+	<div class="page-container container" id="content">
+		<div class="row" id="title_row">
+			<div class="col-md-12">
+			</div>
+		</div>
+		{{> TransaccionesView}}
+	</div>
+</template>
+
+<template name="TransaccionesView">
+	<div id="transacciones-view" class="">
+		<h2 id="component-title">
+			Transacciones
+		</h2>
+		<form id="dataview-controls" class="form-inline">
+			<div id="dataview-controls-insert" class="form-group {{insertButtonClass}}">
+				<button type="submit" id="dataview-insert-button" class="btn btn-success">
+					<span class="fa fa-plus">
+					</span>
+					Add new
+				</button>
+			</div>
+			<div id="dataview-controls-search">
+				<div id="dataview-controls-search-group" class="input-group">
+					<input type="text" class="form-control" id="dataview-search-input" placeholder="Search" name="search" value="{{searchString}}" autofocus="autofocus">
+					<span class="input-group-btn">
+						<button type="button" id="dataview-search-button" class="btn btn-primary">
+							<span class="fa fa-search">
+							</span>
+						</button>
+					</span>
+				</div>
+			</div>
+		</form>
+		{{#if isNotEmpty}}
+			{{#if isNotFound}}
+		<div class="alert alert-warning">
+			"{{searchString}}" not found.
+		</div>
+		{{else}}
+		<div id="dataview-data">
+			{{#if viewAsTable}} {{> TransaccionesViewTable}} {{/if}}
+		</div>
+		{{/if}}
+		{{else}}
+		<div class="alert alert-info">
+			Empty.
+		</div>
+		{{/if}}
+	</div>
+</template>
+
+<template name="TransaccionesViewTable">
+	<table id="dataview-table" class="table table-striped table-hover">
+		<thead id="dataview-table-header">
+			<tr id="dataview-table-header-row">
+				<th class="th-sortable" data-sort="referencia">
+					REFERENCIA
+				</th>
+				<th class="th-sortable" data-sort="fecha">
+					FECHA
+				</th>
+				<th class="th-sortable" data-sort="numero">
+					NUMERO
+				</th>
+				<th class="th-sortable" data-sort="bodega">
+					BODEGA
+				</th>
+				<th class="th-sortable" data-sort="tipo">
+					TIPO
+				</th>
+				<th class="th-sortable" data-sort="cantidad">
+					CANTIDAD
+				</th>
+				<th class="th-sortable" data-sort="costo">
+					COSTO
+				</th>
+				<th class="th-sortable" data-sort="proveedor">
+					PROVEEDOR
+				</th>
+				<th class="th-sortable" data-sort="transaccion">
+					TRANSACCION
+				</th>
+				<th>
+					&nbsp;
+				</th>
+				<th>
+					&nbsp;
+				</th>
+			</tr>
+		</thead>
+		<tbody id="dataview-table-items">
+			{{#each tableItems}} {{> TransaccionesViewTableItems}} {{/each}}
+		</tbody>
+	</table>
+</template>
+
+<template name="TransaccionesViewTableItems">
+	<tr id="dataview-table-items-row">
+		<td>
+			{{referencia}}
+		</td>
+		<td>
+			{{formatDate fecha 'DD/MM/YYYY'}}
+		</td>
+		<td>
+			{{numero}}
+		</td>
+		<td>
+			{{bodega}}
+		</td>
+		<td>
+			{{tipo}}
+		</td>
+		<td>
+			{{cantidad}}
+		</td>
+		<td>
+			{{costo}}
+		</td>
+		<td>
+			{{proveedor}}
+		</td>
+		<td>
+			{{transaccion}}
+		</td>
+		<td class="td-icon">
+			<span id="edit-button" class="fa fa-pencil {{editButtonClass}}" title="Edit">
+			</span>
+		</td>
+		<td class="td-icon">
+			<span id="delete-button" class="fa fa-trash-o {{deleteButtonClass}}" title="Delete">
+			</span>
+		</td>
+	</tr>
+</template>
+
