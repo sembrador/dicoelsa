@@ -54,48 +54,9 @@
 					TELEFONOS
 				</label>
 				<div class="input-div">
-					<table class="table table-striped">
-						<thead>
-							{{#if telefonosCrudItems}}
-							<tr class="crud-table-header">
-								<th>
-									CELULAR
-								</th>
-								<th>
-									TRABAJO
-								</th>
-								<th>
-									CASA
-								</th>
-								<th>
-									OTRO
-								</th>
-							</tr>
-							{{/if}}
-						</thead>
-						<tbody>
-							{{#each telefonosCrudItems}}
-							<tr class="crud-table-row">
-								<td>
-									{{celular}}
-								</td>
-								<td>
-									{{trabajo}}
-								</td>
-								<td>
-									{{casa}}
-								</td>
-								<td>
-									{{otro}}
-								</td>
-							</tr>
-							{{/each}}
-						</tbody>
-					</table>
-					<span id="help-text" class="help-block">
-					</span>
-					<span id="error-text" class="help-block">
-					</span>
+					<p class="form-control-static  control-field-telefonos">
+						{{contratista.telefonos}}
+					</p>
 				</div>
 			</div>
 			<div class="form-group  field-correo">
