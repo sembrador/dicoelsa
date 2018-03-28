@@ -134,7 +134,7 @@
 		},
 		{
 			"path": "client/views/home_private/home_private.html",
-			"checksum": "9e9ed890bef1973f0e51376c60cf74e3d5bd1b7b"
+			"checksum": "a72f023b768dff4331e17c4fc37d3ed4a6b4ee75"
 		},
 		{
 			"path": "client/views/home_private/home_private.js",
@@ -302,11 +302,11 @@
 		},
 		{
 			"path": "client/views/proyectos/proyectos.html",
-			"checksum": "6a38199b4feacdb5859099f60bade77f22fbf3e9"
+			"checksum": "821cc37626d4199b295593810bacaa85c66c499c"
 		},
 		{
 			"path": "client/views/proyectos/proyectos.js",
-			"checksum": "0e5b2e7e3964428bc50cd48be3c1569d53926df6"
+			"checksum": "99109190e7e3153a9dda0196ebc0debeb857b70f"
 		},
 		{
 			"path": "client/views/proyectos/proyectos_controller.js",
@@ -314,7 +314,7 @@
 		},
 		{
 			"path": "client/views/proyectos/details/details.html",
-			"checksum": "5778347b60baca8a0263e7287200150249a903ea"
+			"checksum": "c51a08d74c41507a797fb388d59e67d0b60d7206"
 		},
 		{
 			"path": "client/views/proyectos/details/details.js",
@@ -326,7 +326,7 @@
 		},
 		{
 			"path": "client/views/proyectos/insert/insert.html",
-			"checksum": "0d39552a8f943318381f1a14a706da10d49b292c"
+			"checksum": "aa89b51fbe162aa80ff9d9bd38012b02be31f50a"
 		},
 		{
 			"path": "client/views/proyectos/insert/insert.js",
@@ -338,7 +338,7 @@
 		},
 		{
 			"path": "client/views/proyectos/update/update.html",
-			"checksum": "1404d5697362fbf08bad52521cc1c6243189f2ed"
+			"checksum": "2ca792510ffd1bacfe351be3a50edeec288f6965"
 		},
 		{
 			"path": "client/views/proyectos/update/update.js",
@@ -918,6 +918,7 @@
 			"fullcalendar:fullcalendar",
 			"momentjs:moment",
 			"dburles:google-maps",
+			"anti:i18n",
 			"natestrauser:animate-css",
 			"accounts-password",
 			"blaze-html-templates",
