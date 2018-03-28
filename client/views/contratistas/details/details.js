@@ -33,8 +33,7 @@ Template.ContratistasDetailsForm.onDestroyed(function() {
 });
 
 Template.ContratistasDetailsForm.onRendered(function() {
-	pageSession.set("telefonosCrudItems", this.data.contratista.telefonos || []);
-
+	
 
 	pageSession.set("contratistasDetailsFormInfoMessage", "");
 	pageSession.set("contratistasDetailsFormErrorMessage", "");
@@ -141,8 +140,6 @@ Template.ContratistasDetailsForm.helpers({
 	},
 	"errorMessage": function() {
 		return pageSession.get("contratistasDetailsFormErrorMessage");
-	}, 
-		"telefonosCrudItems": function() {
-		return pageSession.get("telefonosCrudItems");
 	}
+	
 });

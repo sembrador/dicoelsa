@@ -27,12 +27,12 @@
 			{{/if}}
 			<div class="form-group  field-referencia">
 				<label for="referencia">
-					REFERENCIA
+					MATERIAL
 				</label>
 				<div class="input-div">
 					<select class="form-control " name="referencia" data-type="string" required="required" autofocus="autofocus">
 						{{#each material_list}}
-						<option value="{{referencia}}">							{{descripcion}}</option>
+						<option value="{{_id}}">							{{descripcion}}</option>
 						{{/each}}
 					</select>
 					<span id="help-text" class="help-block">

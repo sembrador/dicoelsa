@@ -5,15 +5,6 @@
 			</div>
 		</div>
 		{{> ProyectosInsertForm}}
-		<div class="modal crud-insert-form-container" id="field-contacto-insert-form" tabindex="-1" role="dialog" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-body">
-						{{> ProyectosInsertFieldContactoInsertFormContainerFieldContactoInsertForm}}
-					</div>
-				</div>
-			</div>
-		</div>
 	</div>
 </template>
 
@@ -46,116 +37,102 @@
 					</span>
 				</div>
 			</div>
-			<div class="form-group  field-contacto">
-				<label for="contacto">
-					CONTACTO
+			<div class="form-group  field-contacto-nombre">
+				<label for="contacto.nombre">
+					NOMBRE
 				</label>
 				<div class="input-div">
-					<table class="table table-striped">
-						<thead>
-							<tr class="crud-table-controls">
-								<td colspan="0">
-									<button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#field-contacto-insert-form">
-										<span class="fa fa-plus">
-										</span>
-										AGREGAR
-									</button>
-								</td>
-							</tr>
-							{{#if contactoCrudItems}}
-							<tr class="crud-table-header">
-								<th>
-									&nbsp;
-								</th>
-							</tr>
-							{{/if}}
-						</thead>
-						<tbody>
-							{{#each contactoCrudItems}}
-							<tr class="crud-table-row">
-								<td class="td-icon delete-icon">
-									<span class="fa fa-trash-o" title="Delete">
-									</span>
-								</td>
-							</tr>
-							{{/each}}
-						</tbody>
-					</table>
+					<input type="text" name="contacto.nombre" value="" class="form-control " data-type="object">
 					<span id="help-text" class="help-block">
 					</span>
 					<span id="error-text" class="help-block">
 					</span>
 				</div>
 			</div>
-			<div class="form-group  field-ubicacion">
-				<label for="ubicacion">
+			<div class="form-group  field-contacto-celular">
+				<label for="contacto.celular">
+					CELULAR
+				</label>
+				<div class="input-div">
+					<input type="text" name="contacto.celular" value="" class="form-control " data-type="object">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-contacto-telefono">
+				<label for="contacto.telefono">
+					TELEFONO
+				</label>
+				<div class="input-div">
+					<input type="text" name="contacto.telefono" value="" class="form-control " data-type="object">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-contacto-correo">
+				<label for="contacto.correo">
+					EMAIL
+				</label>
+				<div class="input-div">
+					<input type="text" name="contacto.correo" value="" class="form-control " data-type="object">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-ubicacion-lugar">
+				<label for="ubicacion.lugar">
 					UBICACION
 				</label>
 				<div class="input-div">
-					<textarea class="form-control " name="ubicacion"></textarea>
+					<textarea class="form-control " name="ubicacion.lugar"></textarea>
 					<span id="help-text" class="help-block">
 					</span>
 					<span id="error-text" class="help-block">
 					</span>
 				</div>
 			</div>
-			<div class="form-group  field-geo_lon">
-				<label for="geo_lon">
+			<div class="form-group  field-ubicacion-longitud">
+				<label for="ubicacion.longitud">
 					LONGITUD
 				</label>
 				<div class="input-div">
-					<input type="text" name="geo_lon" value="" class="form-control " data-type="integer">
+					<input type="text" name="ubicacion.longitud" value="" class="form-control " data-type="object">
 					<span id="help-text" class="help-block">
 					</span>
 					<span id="error-text" class="help-block">
 					</span>
 				</div>
 			</div>
-			<div class="form-group  field-geo_lat">
-				<label for="geo_lat">
+			<div class="form-group  field-ubicacion-latitud">
+				<label for="ubicacion.latitud">
 					LATITUD
 				</label>
 				<div class="input-div">
-					<input type="text" name="geo_lat" value="" class="form-control " data-type="integer">
+					<input type="text" name="ubicacion.latitud" value="" class="form-control " data-type="object">
 					<span id="help-text" class="help-block">
 					</span>
 					<span id="error-text" class="help-block">
 					</span>
 				</div>
 			</div>
-			<div class="form-group">
-				<div class="submit-div">
-					<a href="#" id="form-cancel-button" class="btn btn-default">
-						Cancel
-					</a>
-					<button id="form-submit-button" class="btn btn-success" type="submit">
-						<span class="fa fa-check">
-						</span>
-						Save
-					</button>
+			<div class="form-group  field-notas">
+				<label for="notas">
+					NOTAS
+				</label>
+				<div class="input-div">
+					<textarea class="form-control " name="notas"></textarea>
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
 				</div>
 			</div>
-		</form>
-	</div>
-</template>
-
-<template name="ProyectosInsertFieldContactoInsertFormContainerFieldContactoInsertForm">
-	<div id="proyectos-insert-field-contacto-insert-form-container-field-contacto-insert-form" class="">
-		<h2 id="component-title">
-			AGREGAR
-		</h2>
-		<form role="form">
-			{{#if errorMessage}}
-			<div class="alert alert-warning">
-				{{errorMessage}}
-			</div>
-			{{/if}}
-
-			{{#if infoMessage}}
-			<div class="alert alert-success">
-				{{infoMessage}}
-			</div>
-			{{/if}}
 			<div class="form-group">
 				<div class="submit-div">
 					<a href="#" id="form-cancel-button" class="btn btn-default">

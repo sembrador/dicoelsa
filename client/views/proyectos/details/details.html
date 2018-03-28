@@ -39,58 +39,83 @@
 					</p>
 				</div>
 			</div>
-			<div class="form-group  field-contacto">
-				<label for="contacto">
-					CONTACTO
+			<div class="form-group  field-contacto-nombre">
+				<label for="contacto.nombre">
+					NOMBRE
 				</label>
 				<div class="input-div">
-					<table class="table table-striped">
-						<thead>
-							{{#if contactoCrudItems}}
-							<tr class="crud-table-header">
-							</tr>
-							{{/if}}
-						</thead>
-						<tbody>
-							{{#each contactoCrudItems}}
-							<tr class="crud-table-row">
-							</tr>
-							{{/each}}
-						</tbody>
-					</table>
-					<span id="help-text" class="help-block">
-					</span>
-					<span id="error-text" class="help-block">
-					</span>
+					<p class="form-control-static  control-field-contacto-nombre">
+						{{proyecto.contacto.nombre}}
+					</p>
 				</div>
 			</div>
-			<div class="form-group  field-ubicacion">
-				<label for="ubicacion">
+			<div class="form-group  field-contacto-celular">
+				<label for="contacto.celular">
+					CELULAR
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-contacto-celular">
+						{{proyecto.contacto.celular}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-contacto-telefono">
+				<label for="contacto.telefono">
+					TELEFONO
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-contacto-telefono">
+						{{proyecto.contacto.telefono}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-contacto-correo">
+				<label for="contacto.correo">
+					EMAIL
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-contacto-correo">
+						{{proyecto.contacto.correo}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-ubicacion-lugar">
+				<label for="ubicacion.lugar">
 					UBICACION
 				</label>
 				<div class="input-div">
-					<p class="form-control-static  control-field-ubicacion">
-						{{proyecto.ubicacion}}
+					<p class="form-control-static  control-field-ubicacion-lugar">
+						{{proyecto.ubicacion.lugar}}
 					</p>
 				</div>
 			</div>
-			<div class="form-group  field-geo_lon">
-				<label for="geo_lon">
+			<div class="form-group  field-ubicacion-longitud">
+				<label for="ubicacion.longitud">
 					LONGITUD
 				</label>
 				<div class="input-div">
-					<p class="form-control-static  control-field-geo_lon">
-						{{proyecto.geo_lon}}
+					<p class="form-control-static  control-field-ubicacion-longitud">
+						{{proyecto.ubicacion.longitud}}
 					</p>
 				</div>
 			</div>
-			<div class="form-group  field-geo_lat">
-				<label for="geo_lat">
+			<div class="form-group  field-ubicacion-latitud">
+				<label for="ubicacion.latitud">
 					LATITUD
 				</label>
 				<div class="input-div">
-					<p class="form-control-static  control-field-geo_lat">
-						{{proyecto.geo_lat}}
+					<p class="form-control-static  control-field-ubicacion-latitud">
+						{{proyecto.ubicacion.latitud}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-notas">
+				<label for="notas">
+					NOTAS
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-notas">
+						{{proyecto.notas}}
 					</p>
 				</div>
 			</div>

@@ -49,53 +49,44 @@
 					</p>
 				</div>
 			</div>
-			<div class="form-group  field-telefonos">
-				<label for="telefonos">
-					TELEFONOS
+			<div class="form-group  field-telefonos-celular">
+				<label for="telefonos.celular">
+					CELULAR
 				</label>
 				<div class="input-div">
-					<table class="table table-striped">
-						<thead>
-							{{#if telefonosCrudItems}}
-							<tr class="crud-table-header">
-								<th>
-									CELULAR
-								</th>
-								<th>
-									TRABAJO
-								</th>
-								<th>
-									CASA
-								</th>
-								<th>
-									OTRO
-								</th>
-							</tr>
-							{{/if}}
-						</thead>
-						<tbody>
-							{{#each telefonosCrudItems}}
-							<tr class="crud-table-row">
-								<td>
-									{{celular}}
-								</td>
-								<td>
-									{{trabajo}}
-								</td>
-								<td>
-									{{casa}}
-								</td>
-								<td>
-									{{otro}}
-								</td>
-							</tr>
-							{{/each}}
-						</tbody>
-					</table>
-					<span id="help-text" class="help-block">
-					</span>
-					<span id="error-text" class="help-block">
-					</span>
+					<p class="form-control-static  control-field-telefonos-celular">
+						{{contratista.telefonos.celular}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-telefonos-trabajo">
+				<label for="telefonos.trabajo">
+					TRABAJO
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-telefonos-trabajo">
+						{{contratista.telefonos.trabajo}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-telefonos-casa">
+				<label for="telefonos.casa">
+					CASA
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-telefonos-casa">
+						{{contratista.telefonos.casa}}
+					</p>
+				</div>
+			</div>
+			<div class="form-group  field-telefonos-otro">
+				<label for="telefonos.otro">
+					OTRO
+				</label>
+				<div class="input-div">
+					<p class="form-control-static  control-field-telefonos-otro">
+						{{contratista.telefonos.otro}}
+					</p>
 				</div>
 			</div>
 			<div class="form-group  field-correo">

@@ -93,7 +93,7 @@ Router.map(function () {
 	this.route("/verify_email/:verifyEmailToken", {name: "verify_email", title: "", controller: "VerifyEmailController"});
 	this.route("/forgot_password", {name: "forgot_password", title: "", controller: "ForgotPasswordController"});
 	this.route("/reset_password/:resetPasswordToken", {name: "reset_password", title: "", controller: "ResetPasswordController"});
-	this.route("/home_private", {name: "home_private", title: "HOLA! {{userFullName}}!", controller: "HomePrivateController"});
+	this.route("/home_private", {name: "home_private", title: "HOLA {{userFullName}}!", controller: "HomePrivateController"});
 	this.route("/admin", {name: "admin", title: "", controller: "AdminController"});
 	this.route("/admin/users", {name: "admin.users", title: "", controller: "AdminUsersController"});
 	this.route("/admin/users/details/:userId", {name: "admin.users.details", title: "", controller: "AdminUsersDetailsController"});

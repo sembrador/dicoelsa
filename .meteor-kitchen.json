@@ -2,7 +2,7 @@
 	"output_files": [
 		{
 			"path": "client/views/router.js",
-			"checksum": "fa27afb04b2f6d22780623b79ffcd32de7b0f78a"
+			"checksum": "4fdd14abf51ed69579226fb6a2621f86e988a039"
 		},
 		{
 			"path": "server/controllers/router.js",
@@ -54,7 +54,7 @@
 		},
 		{
 			"path": "client/views/layout/layout.html",
-			"checksum": "3107740b5ce5890e250a69b06cfe37191403fbea"
+			"checksum": "f33fc42ec789ed8e900b5d7dc76fcf1d9440b2f1"
 		},
 		{
 			"path": "client/views/layout/layout.js",
@@ -134,7 +134,7 @@
 		},
 		{
 			"path": "client/views/home_private/home_private.html",
-			"checksum": "d8eb99ee53bf0befc2d6639c7c7e64f34c20b528"
+			"checksum": "a72f023b768dff4331e17c4fc37d3ed4a6b4ee75"
 		},
 		{
 			"path": "client/views/home_private/home_private.js",
@@ -146,7 +146,7 @@
 		},
 		{
 			"path": "client/views/admin/admin.html",
-			"checksum": "84c24cb2f48aa06da66b9c50fc98570b076efbb2"
+			"checksum": "e99a891ab74cd5254c75dbb02ddd223bd5e39106"
 		},
 		{
 			"path": "client/views/admin/admin.js",
@@ -254,11 +254,11 @@
 		},
 		{
 			"path": "client/views/materiales/materiales.html",
-			"checksum": "cc9e0c1e425fb7974f1febd03875d96934aa307d"
+			"checksum": "13154638ccac92341b0e77793f92561dc4d6acd3"
 		},
 		{
 			"path": "client/views/materiales/materiales.js",
-			"checksum": "a2e6f752da54bfa4d0fbea2c8139ccde490c9982"
+			"checksum": "8af7f5729f01d889196758364234101ca33184cc"
 		},
 		{
 			"path": "client/views/materiales/materiales_controller.js",
@@ -266,7 +266,7 @@
 		},
 		{
 			"path": "client/views/materiales/details/details.html",
-			"checksum": "7911d01f738d83763397430cd991c5f8a5d7b543"
+			"checksum": "52839142f26885fa06610be4de6495f4870e4f3e"
 		},
 		{
 			"path": "client/views/materiales/details/details.js",
@@ -278,7 +278,7 @@
 		},
 		{
 			"path": "client/views/materiales/insert/insert.html",
-			"checksum": "7609a322731ec1ba15fa48af8fa98491e4aa7ce1"
+			"checksum": "62be1bb03abe3d32958d905acf3f7964215accb0"
 		},
 		{
 			"path": "client/views/materiales/insert/insert.js",
@@ -290,7 +290,7 @@
 		},
 		{
 			"path": "client/views/materiales/update/update.html",
-			"checksum": "4fd9001443500d16a5d2bd29964ab67e65324591"
+			"checksum": "f1be6d5e8b26acb0c14a6c4bf1d7c460a2196aa2"
 		},
 		{
 			"path": "client/views/materiales/update/update.js",
@@ -302,11 +302,11 @@
 		},
 		{
 			"path": "client/views/proyectos/proyectos.html",
-			"checksum": "2a6f56028db9f7879d8bdd0f49b8137f00e4a150"
+			"checksum": "3e5ac6f16301f7d3524c4d242edd77f90942e073"
 		},
 		{
 			"path": "client/views/proyectos/proyectos.js",
-			"checksum": "88649c4ec4c54359c1ff29218117fceb815761f2"
+			"checksum": "fb97ac286fa6e244c601f65bd5f18459d9be747c"
 		},
 		{
 			"path": "client/views/proyectos/proyectos_controller.js",
@@ -314,11 +314,11 @@
 		},
 		{
 			"path": "client/views/proyectos/details/details.html",
-			"checksum": "d94443479f58d1def3b6dfd65af9007701bcc08c"
+			"checksum": "85a0f6f3314f2cfa447629beefa0d4afb584229e"
 		},
 		{
 			"path": "client/views/proyectos/details/details.js",
-			"checksum": "dd4d5ac365c688f31abede252d858f0265ffc5fb"
+			"checksum": "222414e916adaf4d82d633ecd8237359345aa6d9"
 		},
 		{
 			"path": "client/views/proyectos/details/details_controller.js",
@@ -326,11 +326,11 @@
 		},
 		{
 			"path": "client/views/proyectos/insert/insert.html",
-			"checksum": "36f642e0509b0111a80c6c0f8c59edcf6a2e7de2"
+			"checksum": "215381132e93d067f154afabd293f575ae3c4550"
 		},
 		{
 			"path": "client/views/proyectos/insert/insert.js",
-			"checksum": "6de09e570ae42aa016d8a01d08c4de6a3a0b209d"
+			"checksum": "982fc5a9d5f90d4a11c7c6c76202eb140e488124"
 		},
 		{
 			"path": "client/views/proyectos/insert/insert_controller.js",
@@ -338,11 +338,11 @@
 		},
 		{
 			"path": "client/views/proyectos/update/update.html",
-			"checksum": "6c13500c8e0a234575aefbbbf8d6b8430b04a3e3"
+			"checksum": "873b8cbecfc63652bc9e3b4204abe26b7c16c813"
 		},
 		{
 			"path": "client/views/proyectos/update/update.js",
-			"checksum": "9477e10ff9d52724fe175a0027f27783f4b81c9b"
+			"checksum": "2fa452b4eaa29eec5d1df1d980e6125d32be945c"
 		},
 		{
 			"path": "client/views/proyectos/update/update_controller.js",
@@ -350,11 +350,11 @@
 		},
 		{
 			"path": "client/views/contratistas/contratistas.html",
-			"checksum": "b48041cadbb0ef8d1dfc5520099af4d711b12629"
+			"checksum": "81126255aa36c3c3f607cce6be86963dc52d76e1"
 		},
 		{
 			"path": "client/views/contratistas/contratistas.js",
-			"checksum": "c9ccd9c2a3fc57f99c358fc06adca654fd488710"
+			"checksum": "45f5192f479d5bfbf61a8190e5413e83d982f550"
 		},
 		{
 			"path": "client/views/contratistas/contratistas_controller.js",
@@ -362,11 +362,11 @@
 		},
 		{
 			"path": "client/views/contratistas/details/details.html",
-			"checksum": "387426ee8b26ed41fbc6ed8d510407ea1a099101"
+			"checksum": "f086a24ed1d49e8e85ec7a45ac83b2e021f41971"
 		},
 		{
 			"path": "client/views/contratistas/details/details.js",
-			"checksum": "2041feb2e2ce47884b378e67fc981db0f63d4ee5"
+			"checksum": "e3d7d7a04c1e4249168699f081d9fcad32b8d540"
 		},
 		{
 			"path": "client/views/contratistas/details/details_controller.js",
@@ -374,11 +374,11 @@
 		},
 		{
 			"path": "client/views/contratistas/insert/insert.html",
-			"checksum": "5750ca50cc511c402316afe68c6c854127c7f12c"
+			"checksum": "2e6cc04e06c10f0ff2dc10b8050180627ea1c92b"
 		},
 		{
 			"path": "client/views/contratistas/insert/insert.js",
-			"checksum": "18982521e700e727e985ac77265ced93c49f38d0"
+			"checksum": "8cb67c1ac9798333d179afb82f59177ce4568163"
 		},
 		{
 			"path": "client/views/contratistas/insert/insert_controller.js",
@@ -386,11 +386,11 @@
 		},
 		{
 			"path": "client/views/contratistas/update/update.html",
-			"checksum": "77bb71c12f1069e7f2b3f326f75fa3a98a49ce3c"
+			"checksum": "e5cdc134e3f24fe61cc904c940b927a0d36142e2"
 		},
 		{
 			"path": "client/views/contratistas/update/update.js",
-			"checksum": "3396b0bdb59d32acf552194b24f18f183abca177"
+			"checksum": "a1557c1413b012619a31a04073abd942d683c432"
 		},
 		{
 			"path": "client/views/contratistas/update/update_controller.js",
@@ -398,7 +398,7 @@
 		},
 		{
 			"path": "client/views/transacciones/transacciones.html",
-			"checksum": "8603391633608d382d14ef05922d40e09008d3fb"
+			"checksum": "53c4464a18d7b8ebe9d5c5e719dc7c475656dcb6"
 		},
 		{
 			"path": "client/views/transacciones/transacciones.js",
@@ -410,7 +410,7 @@
 		},
 		{
 			"path": "client/views/transacciones/details/details.html",
-			"checksum": "346b0d690d0885dcb8cc6079cfffc705643907e0"
+			"checksum": "0356d50130b7b08ee6efb1c732b630abb3e4cd81"
 		},
 		{
 			"path": "client/views/transacciones/details/details.js",
@@ -422,7 +422,7 @@
 		},
 		{
 			"path": "client/views/transacciones/insert/insert.html",
-			"checksum": "d10ed00b3a918bb977ab04b2266d9d746db0b862"
+			"checksum": "90bb5c9ed1a108a861d1ee27ecba041fedc25f6e"
 		},
 		{
 			"path": "client/views/transacciones/insert/insert.js",
@@ -434,7 +434,7 @@
 		},
 		{
 			"path": "client/views/transacciones/update/update.html",
-			"checksum": "e306c4505974d93a692bc67b918226696ea1291d"
+			"checksum": "118bd545c7666f8b26ff17302c8465d2648d8c68"
 		},
 		{
 			"path": "client/views/transacciones/update/update.js",
@@ -446,11 +446,11 @@
 		},
 		{
 			"path": "client/views/proveedores/proveedores.html",
-			"checksum": "ddc86349b9486d7c7ed1a18837585de614930f4f"
+			"checksum": "035eb71c77e17331bb018a7cd9d40d142d938637"
 		},
 		{
 			"path": "client/views/proveedores/proveedores.js",
-			"checksum": "d941c2ecc50083d2ec93e82ecc247fb228a6eb43"
+			"checksum": "d922f83bec63612663ef42f45026449e3ae8203e"
 		},
 		{
 			"path": "client/views/proveedores/proveedores_controller.js",
@@ -458,11 +458,11 @@
 		},
 		{
 			"path": "client/views/proveedores/details/details.html",
-			"checksum": "f642bdf4b713b54fd992604152a0417df5af7d29"
+			"checksum": "628269598dd70921fb34c27f197f95929f40579f"
 		},
 		{
 			"path": "client/views/proveedores/details/details.js",
-			"checksum": "145cbab542839acc48dcceb82907d7ec8386d007"
+			"checksum": "495d24b39ae0458042b553fe9e130f1b8cd4a565"
 		},
 		{
 			"path": "client/views/proveedores/details/details_controller.js",
@@ -470,11 +470,11 @@
 		},
 		{
 			"path": "client/views/proveedores/insert/insert.html",
-			"checksum": "377c03d24bbefd2c63dedbd9c7cf7e0c24581609"
+			"checksum": "150765295e66bba41fdae1f14636619285c96530"
 		},
 		{
 			"path": "client/views/proveedores/insert/insert.js",
-			"checksum": "39a7cb102632485edb9bcae04cf691ead1a9d315"
+			"checksum": "8277832cbd0aa72ed73d551ae0cb401ed38c2fe2"
 		},
 		{
 			"path": "client/views/proveedores/insert/insert_controller.js",
@@ -482,11 +482,11 @@
 		},
 		{
 			"path": "client/views/proveedores/update/update.html",
-			"checksum": "5ed2c54a14e28d189fb3e3777acdcddcde030327"
+			"checksum": "58a035219fc514d5e8f85840ff8c8b2f17aa7762"
 		},
 		{
 			"path": "client/views/proveedores/update/update.js",
-			"checksum": "f18b77226c4c0d4bd7b6de746272ae18bbc1b345"
+			"checksum": "ccdec6ca8e5ba32434cd221ffcaf3340d4275291"
 		},
 		{
 			"path": "client/views/proveedores/update/update_controller.js",
@@ -655,6 +655,26 @@
 		{
 			"path": "client/styles/styles/animate_visible.js",
 			"checksum": "f2f5445a4f437805ef88b61169e3c5386ee67911"
+		},
+		{
+			"path": "both/collections/0_common.js",
+			"checksum": "8cbb37a3585e7d241f60c607c0e597d785b66958"
+		},
+		{
+			"path": "client/lib/util_varios.js",
+			"checksum": "9de7c217a2cb7f6183170d44e14eb04a3d9e0c0e"
+		},
+		{
+			"path": "public/spanish.json",
+			"checksum": "e42b2c31ca6248cb6122cd977c4b3f008857f448"
+		},
+		{
+			"path": "server/methods/agenda.js",
+			"checksum": "9e1f979a2d518992d9a2f4de0e46f0d52510da3d"
+		},
+		{
+			"path": "lib/util_varios.js",
+			"checksum": "154457791ff5b42399fa96248898f0a481465640"
 		},
 		{
 			"path": "lib/string_utils.js",
@@ -883,7 +903,22 @@
 	],
 	"packages": {
 		"meteor": [
+			"aldeed:tabular",
+			"chrismbeckett:toastr",
+			"copleykj:livestamp",
+			"mizzao:user-status",
+			"mizzao:timesync",
+			"numeral:numeral",
+			"vsivsi:file-collection",
+			"benjaminrh:jquery-cookie",
+			"dburles:collection-helpers",
+			"andrasph:clockpicker",
+			"session",
+			"check",
+			"fullcalendar:fullcalendar",
+			"momentjs:moment",
 			"dburles:google-maps",
+			"anti:i18n",
 			"natestrauser:animate-css",
 			"accounts-password",
 			"blaze-html-templates",
@@ -893,20 +928,18 @@
 			"spiderable",
 			"ejson",
 			"random",
-			"session",
 			"iron:router",
 			"fortawesome:fontawesome",
 			"matb33:collection-hooks",
 			"perak:user-roles",
-			"copleykj:livestamp",
 			"less",
 			"nemo64:bootstrap@=3.3.5_2",
 			"reactive-dict",
 			"mizzao:bootboxjs",
-			"momentjs:moment",
 			"rajit:bootstrap3-datepicker"
 		],
 		"npm": [
+			"pdfmake",
 			"bcrypt"
 		],
 		"mrt": [

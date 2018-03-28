@@ -43,7 +43,7 @@ var ProyectosViewItems = function(cursor) {
 	} else {
 		searchString = searchString.replace(".", "\\.");
 		var regEx = new RegExp(searchString, "i");
-		var searchFields = ["descripcion", "contacto", "geo_lon", "geo_lat"];
+		var searchFields = ["descripcion", "contacto.nombre", "contacto.celular", "contacto.telefono", "contacto.correo", "ubicacion.longitud", "ubicacion.latitud", "notas"];
 		filtered = _.filter(raw, function(item) {
 			var match = false;
 			_.each(searchFields, function(field) {

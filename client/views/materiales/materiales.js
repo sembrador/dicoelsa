@@ -43,7 +43,7 @@ var MaterialesViewItems = function(cursor) {
 	} else {
 		searchString = searchString.replace(".", "\\.");
 		var regEx = new RegExp(searchString, "i");
-		var searchFields = ["referencia", "descripcion", "ultima_salida", "ultima_entrada"];
+		var searchFields = ["descripcion", "ultima_salida", "ultima_entrada", "norma.codigo", "norma.cantidad"];
 		filtered = _.filter(raw, function(item) {
 			var match = false;
 			_.each(searchFields, function(field) {

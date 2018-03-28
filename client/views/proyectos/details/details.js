@@ -33,8 +33,7 @@ Template.ProyectosDetailsForm.onDestroyed(function() {
 });
 
 Template.ProyectosDetailsForm.onRendered(function() {
-	pageSession.set("contactoCrudItems", this.data.proyecto.contacto || []);
-
+	
 
 	pageSession.set("proyectosDetailsFormInfoMessage", "");
 	pageSession.set("proyectosDetailsFormErrorMessage", "");
@@ -141,8 +140,6 @@ Template.ProyectosDetailsForm.helpers({
 	},
 	"errorMessage": function() {
 		return pageSession.get("proyectosDetailsFormErrorMessage");
-	}, 
-		"contactoCrudItems": function() {
-		return pageSession.get("contactoCrudItems");
 	}
+	
 });

@@ -61,8 +61,17 @@
 				<th class="th-sortable" data-sort="ruc">
 					RUC
 				</th>
-				<th class="th-sortable" data-sort="telefonos">
-					TELEFONOS
+				<th class="th-sortable" data-sort="telefonos.celular">
+					CELULAR
+				</th>
+				<th class="th-sortable" data-sort="telefonos.trabajo">
+					TRABAJO
+				</th>
+				<th class="th-sortable" data-sort="telefonos.casa">
+					CASA
+				</th>
+				<th class="th-sortable" data-sort="telefonos.otro">
+					OTRO
 				</th>
 				<th class="th-sortable" data-sort="correo">
 					EMAIL
@@ -90,7 +99,16 @@
 			{{ruc}}
 		</td>
 		<td>
-			{{telefonos}}
+			{{telefonos.celular}}
+		</td>
+		<td>
+			{{telefonos.trabajo}}
+		</td>
+		<td>
+			{{telefonos.casa}}
+		</td>
+		<td>
+			{{telefonos.otro}}
 		</td>
 		<td>
 			{{correo}}

@@ -55,17 +55,41 @@
 	<table id="dataview-table" class="table table-striped table-hover">
 		<thead id="dataview-table-header">
 			<tr id="dataview-table-header-row">
-				<th class="th-sortable" data-sort="referencia">
-					REFERENCIA
-				</th>
 				<th class="th-sortable" data-sort="descripcion">
 					DESCRIPCION
 				</th>
-				<th class="th-sortable" data-sort="direccion">
+				<th class="th-sortable" data-sort="direccion.calle">
 					DIRECCION
 				</th>
-				<th class="th-sortable" data-sort="telefono">
+				<th class="th-sortable" data-sort="direccion.provincia">
+					PROVINCIA
+				</th>
+				<th class="th-sortable" data-sort="direccion.distrito">
+					DISTRITO
+				</th>
+				<th class="th-sortable" data-sort="direccion.corregimiento">
+					CORREGIMIENTO
+				</th>
+				<th class="th-sortable" data-sort="telefonos.fijo">
+					NEGOCIO
+				</th>
+				<th class="th-sortable" data-sort="telefonos.fax">
+					FAX
+				</th>
+				<th class="th-sortable" data-sort="telefonos.otro">
+					OTRO
+				</th>
+				<th class="th-sortable" data-sort="contacto.nombre">
+					NOMBRE
+				</th>
+				<th class="th-sortable" data-sort="contacto.celular">
+					CELULAR
+				</th>
+				<th class="th-sortable" data-sort="contacto.telefono">
 					TELEFONO
+				</th>
+				<th class="th-sortable" data-sort="contacto.correo">
+					EMAIL
 				</th>
 				<th>
 					&nbsp;
@@ -84,16 +108,40 @@
 <template name="ProveedoresViewTableItems">
 	<tr id="dataview-table-items-row">
 		<td>
-			{{referencia}}
-		</td>
-		<td>
 			{{descripcion}}
 		</td>
 		<td>
-			{{direccion}}
+			{{direccion.calle}}
 		</td>
 		<td>
-			{{telefono}}
+			{{direccion.provincia}}
+		</td>
+		<td>
+			{{direccion.distrito}}
+		</td>
+		<td>
+			{{direccion.corregimiento}}
+		</td>
+		<td>
+			{{telefonos.fijo}}
+		</td>
+		<td>
+			{{telefonos.fax}}
+		</td>
+		<td>
+			{{telefonos.otro}}
+		</td>
+		<td>
+			{{contacto.nombre}}
+		</td>
+		<td>
+			{{contacto.celular}}
+		</td>
+		<td>
+			{{contacto.telefono}}
+		</td>
+		<td>
+			{{contacto.correo}}
 		</td>
 		<td class="td-icon">
 			<span id="edit-button" class="fa fa-pencil {{editButtonClass}}" title="Edit">

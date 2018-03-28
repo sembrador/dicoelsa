@@ -5,24 +5,6 @@
 			</div>
 		</div>
 		{{> ProveedoresInsertForm}}
-		<div class="modal crud-insert-form-container" id="field-direccion-insert-form" tabindex="-1" role="dialog" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-body">
-						{{> ProveedoresInsertFieldDireccionInsertFormContainerFieldDireccionInsertForm}}
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="modal crud-insert-form-container" id="field-telefono-insert-form" tabindex="-1" role="dialog" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-body">
-						{{> ProveedoresInsertFieldTelefonoInsertFormContainerFieldTelefonoInsertForm}}
-					</div>
-				</div>
-			</div>
-		</div>
 	</div>
 </template>
 
@@ -43,298 +25,144 @@
 				{{infoMessage}}
 			</div>
 			{{/if}}
-			<div class="form-group  field-referencia">
-				<label for="referencia">
-					REFERENCIA
-				</label>
-				<div class="input-div">
-					<input type="text" name="referencia" value="" class="form-control " autofocus="autofocus" required="required" data-type="string">
-					<span id="help-text" class="help-block">
-					</span>
-					<span id="error-text" class="help-block">
-					</span>
-				</div>
-			</div>
 			<div class="form-group  field-descripcion">
 				<label for="descripcion">
 					DESCRIPCION
 				</label>
 				<div class="input-div">
-					<input type="text" name="descripcion" value="" class="form-control " required="required" data-type="string">
+					<input type="text" name="descripcion" value="" class="form-control " autofocus="autofocus" required="required" data-type="string">
 					<span id="help-text" class="help-block">
 					</span>
 					<span id="error-text" class="help-block">
 					</span>
 				</div>
 			</div>
-			<div class="form-group  field-direccion">
-				<label for="direccion">
+			<div class="form-group  field-direccion-calle">
+				<label for="direccion.calle">
 					DIRECCION
 				</label>
 				<div class="input-div">
-					<table class="table table-striped">
-						<thead>
-							<tr class="crud-table-controls">
-								<td colspan="4">
-									<button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#field-direccion-insert-form">
-										<span class="fa fa-plus">
-										</span>
-										AGREGAR
-									</button>
-								</td>
-							</tr>
-							{{#if direccionCrudItems}}
-							<tr class="crud-table-header">
-								<th>
-									CALLE
-								</th>
-								<th>
-									PROVINCIA
-								</th>
-								<th>
-									DISTRITO
-								</th>
-								<th>
-									CORREGIMIENTO
-								</th>
-								<th>
-									&nbsp;
-								</th>
-							</tr>
-							{{/if}}
-						</thead>
-						<tbody>
-							{{#each direccionCrudItems}}
-							<tr class="crud-table-row">
-								<td>
-									{{calle}}
-								</td>
-								<td>
-									{{provincia}}
-								</td>
-								<td>
-									{{distrito}}
-								</td>
-								<td>
-									{{corregimiento}}
-								</td>
-								<td class="td-icon delete-icon">
-									<span class="fa fa-trash-o" title="Delete">
-									</span>
-								</td>
-							</tr>
-							{{/each}}
-						</tbody>
-					</table>
+					<textarea class="form-control " name="direccion.calle"></textarea>
 					<span id="help-text" class="help-block">
 					</span>
 					<span id="error-text" class="help-block">
 					</span>
 				</div>
 			</div>
-			<div class="form-group text field-telefono">
-				<label for="telefono">
-					TELEFONO
-				</label>
-				<div class="input-div">
-					<table class="table table-striped">
-						<thead>
-							<tr class="crud-table-controls">
-								<td colspan="3">
-									<button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#field-telefono-insert-form">
-										<span class="fa fa-plus">
-										</span>
-										AGREGAR
-									</button>
-								</td>
-							</tr>
-							{{#if telefonoCrudItems}}
-							<tr class="crud-table-header">
-								<th>
-									NEGOCIO
-								</th>
-								<th>
-									CELULAR
-								</th>
-								<th>
-									OTRO
-								</th>
-								<th>
-									&nbsp;
-								</th>
-							</tr>
-							{{/if}}
-						</thead>
-						<tbody>
-							{{#each telefonoCrudItems}}
-							<tr class="crud-table-row">
-								<td>
-									{{fijo}}
-								</td>
-								<td>
-									{{celular}}
-								</td>
-								<td>
-									{{otro}}
-								</td>
-								<td class="td-icon delete-icon">
-									<span class="fa fa-trash-o" title="Delete">
-									</span>
-								</td>
-							</tr>
-							{{/each}}
-						</tbody>
-					</table>
-					<span id="help-text" class="help-block">
-					</span>
-					<span id="error-text" class="help-block">
-					</span>
-				</div>
-			</div>
-			<div class="form-group">
-				<div class="submit-div">
-					<a href="#" id="form-cancel-button" class="btn btn-default">
-						Cancel
-					</a>
-					<button id="form-submit-button" class="btn btn-success" type="submit">
-						<span class="fa fa-check">
-						</span>
-						Save
-					</button>
-				</div>
-			</div>
-		</form>
-	</div>
-</template>
-
-<template name="ProveedoresInsertFieldDireccionInsertFormContainerFieldDireccionInsertForm">
-	<div id="proveedores-insert-field-direccion-insert-form-container-field-direccion-insert-form" class="">
-		<h2 id="component-title">
-			AGREGAR
-		</h2>
-		<form role="form">
-			{{#if errorMessage}}
-			<div class="alert alert-warning">
-				{{errorMessage}}
-			</div>
-			{{/if}}
-
-			{{#if infoMessage}}
-			<div class="alert alert-success">
-				{{infoMessage}}
-			</div>
-			{{/if}}
-			<div class="form-group text field-calle">
-				<label for="calle">
-					CALLE
-				</label>
-				<div class="input-div">
-					<input type="text" name="calle" value="" class="form-control " autofocus="autofocus" data-type="string">
-					<span id="help-text" class="help-block">
-					</span>
-					<span id="error-text" class="help-block">
-					</span>
-				</div>
-			</div>
-			<div class="form-group text field-provincia">
-				<label for="provincia">
+			<div class="form-group  field-direccion-provincia">
+				<label for="direccion.provincia">
 					PROVINCIA
 				</label>
 				<div class="input-div">
-					<input type="text" name="provincia" value="" class="form-control " data-type="string">
+					<input type="text" name="direccion.provincia" value="" class="form-control " required="required" data-type="object">
 					<span id="help-text" class="help-block">
 					</span>
 					<span id="error-text" class="help-block">
 					</span>
 				</div>
 			</div>
-			<div class="form-group text field-distrito">
-				<label for="distrito">
+			<div class="form-group  field-direccion-distrito">
+				<label for="direccion.distrito">
 					DISTRITO
 				</label>
 				<div class="input-div">
-					<input type="text" name="distrito" value="" class="form-control " data-type="string">
+					<input type="text" name="direccion.distrito" value="" class="form-control " required="required" data-type="object">
 					<span id="help-text" class="help-block">
 					</span>
 					<span id="error-text" class="help-block">
 					</span>
 				</div>
 			</div>
-			<div class="form-group text field-corregimiento">
-				<label for="corregimiento">
+			<div class="form-group  field-direccion-corregimiento">
+				<label for="direccion.corregimiento">
 					CORREGIMIENTO
 				</label>
 				<div class="input-div">
-					<input type="text" name="corregimiento" value="" class="form-control " data-type="string">
+					<input type="text" name="direccion.corregimiento" value="" class="form-control " required="required" data-type="object">
 					<span id="help-text" class="help-block">
 					</span>
 					<span id="error-text" class="help-block">
 					</span>
 				</div>
 			</div>
-			<div class="form-group">
-				<div class="submit-div">
-					<a href="#" id="form-cancel-button" class="btn btn-default">
-						Cancel
-					</a>
-					<button id="form-submit-button" class="btn btn-success" type="submit">
-						<span class="fa fa-check">
-						</span>
-						Save
-					</button>
-				</div>
-			</div>
-		</form>
-	</div>
-</template>
-
-<template name="ProveedoresInsertFieldTelefonoInsertFormContainerFieldTelefonoInsertForm">
-	<div id="proveedores-insert-field-telefono-insert-form-container-field-telefono-insert-form" class="">
-		<h2 id="component-title">
-			AGREGAR
-		</h2>
-		<form role="form">
-			{{#if errorMessage}}
-			<div class="alert alert-warning">
-				{{errorMessage}}
-			</div>
-			{{/if}}
-
-			{{#if infoMessage}}
-			<div class="alert alert-success">
-				{{infoMessage}}
-			</div>
-			{{/if}}
-			<div class="form-group text field-fijo">
-				<label for="fijo">
+			<div class="form-group  field-telefonos-fijo">
+				<label for="telefonos.fijo">
 					NEGOCIO
 				</label>
 				<div class="input-div">
-					<input type="text" name="fijo" value="" class="form-control " autofocus="autofocus" required="required" data-type="string">
+					<input type="text" name="telefonos.fijo" value="" class="form-control " required="required" data-type="object">
 					<span id="help-text" class="help-block">
 					</span>
 					<span id="error-text" class="help-block">
 					</span>
 				</div>
 			</div>
-			<div class="form-group text field-celular">
-				<label for="celular">
-					CELULAR
+			<div class="form-group  field-telefonos-fax">
+				<label for="telefonos.fax">
+					FAX
 				</label>
 				<div class="input-div">
-					<input type="text" name="celular" value="" class="form-control " required="required" data-type="string">
+					<input type="text" name="telefonos.fax" value="" class="form-control " data-type="object">
 					<span id="help-text" class="help-block">
 					</span>
 					<span id="error-text" class="help-block">
 					</span>
 				</div>
 			</div>
-			<div class="form-group text field-otro">
-				<label for="otro">
+			<div class="form-group  field-telefonos-otro">
+				<label for="telefonos.otro">
 					OTRO
 				</label>
 				<div class="input-div">
-					<input type="text" name="otro" value="" class="form-control " required="required" data-type="string">
+					<input type="text" name="telefonos.otro" value="" class="form-control " data-type="object">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-contacto-nombre">
+				<label for="contacto.nombre">
+					NOMBRE
+				</label>
+				<div class="input-div">
+					<input type="text" name="contacto.nombre" value="" class="form-control " data-type="object">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-contacto-celular">
+				<label for="contacto.celular">
+					CELULAR
+				</label>
+				<div class="input-div">
+					<input type="text" name="contacto.celular" value="" class="form-control " data-type="object">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-contacto-telefono">
+				<label for="contacto.telefono">
+					TELEFONO
+				</label>
+				<div class="input-div">
+					<input type="text" name="contacto.telefono" value="" class="form-control " data-type="object">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-contacto-correo">
+				<label for="contacto.correo">
+					EMAIL
+				</label>
+				<div class="input-div">
+					<input type="text" name="contacto.correo" value="" class="form-control " data-type="object">
 					<span id="help-text" class="help-block">
 					</span>
 					<span id="error-text" class="help-block">

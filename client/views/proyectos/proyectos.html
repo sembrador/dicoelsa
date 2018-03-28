@@ -58,17 +58,29 @@
 				<th class="th-sortable" data-sort="descripcion">
 					NOMBRE
 				</th>
-				<th class="th-sortable" data-sort="contacto">
-					CONTACTO
+				<th class="th-sortable" data-sort="contacto.nombre">
+					NOMBRE
+				</th>
+				<th class="th-sortable" data-sort="contacto.celular">
+					CELULAR
+				</th>
+				<th class="th-sortable" data-sort="contacto.telefono">
+					TELEFONO
+				</th>
+				<th class="th-sortable" data-sort="contacto.correo">
+					EMAIL
 				</th>
 				<th>
 					UBICACION
 				</th>
-				<th class="th-sortable" data-sort="geo_lon">
+				<th class="th-sortable" data-sort="ubicacion.longitud">
 					LONGITUD
 				</th>
-				<th class="th-sortable" data-sort="geo_lat">
+				<th class="th-sortable" data-sort="ubicacion.latitud">
 					LATITUD
+				</th>
+				<th class="th-sortable" data-sort="notas">
+					NOTAS
 				</th>
 				<th>
 					&nbsp;
@@ -90,16 +102,28 @@
 			{{descripcion}}
 		</td>
 		<td>
-			{{contacto}}
+			{{contacto.nombre}}
 		</td>
 		<td>
-			{{ubicacion}}
+			{{contacto.celular}}
 		</td>
 		<td>
-			{{geo_lon}}
+			{{contacto.telefono}}
 		</td>
 		<td>
-			{{geo_lat}}
+			{{contacto.correo}}
+		</td>
+		<td>
+			{{ubicacion.lugar}}
+		</td>
+		<td>
+			{{ubicacion.longitud}}
+		</td>
+		<td>
+			{{ubicacion.latitud}}
+		</td>
+		<td>
+			{{notas}}
 		</td>
 		<td class="td-icon">
 			<span id="edit-button" class="fa fa-pencil {{editButtonClass}}" title="Edit">
