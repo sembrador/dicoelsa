@@ -73,10 +73,10 @@
 				<th>
 					UBICACION
 				</th>
-				<th class="th-sortable" data-sort="geo_lon">
+				<th class="th-sortable" data-sort="ubicacion.longitud">
 					LONGITUD
 				</th>
-				<th class="th-sortable" data-sort="geo_lat">
+				<th class="th-sortable" data-sort="ubicacion.latitud">
 					LATITUD
 				</th>
 				<th class="th-sortable" data-sort="notas">
@@ -114,13 +114,13 @@
 			{{contacto.correo}}
 		</td>
 		<td>
-			{{ubicacion}}
+			{{ubicacion.lugar}}
 		</td>
 		<td>
-			{{geo_lon}}
+			{{ubicacion.longitud}}
 		</td>
 		<td>
-			{{geo_lat}}
+			{{ubicacion.latitud}}
 		</td>
 		<td>
 			{{notas}}

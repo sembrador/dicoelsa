@@ -25,24 +25,36 @@
 				{{infoMessage}}
 			</div>
 			{{/if}}
-			<div class="form-group  field-referencia">
-				<label for="referencia">
-					REFERENCIA
+			<div class="form-group  field-descripcion">
+				<label for="descripcion">
+					DESCRIPCION
 				</label>
 				<div class="input-div">
-					<input type="text" name="referencia" value="{{material.referencia}}" class="form-control " autofocus="autofocus" required="required" data-type="string">
+					<input type="text" name="descripcion" value="{{material.descripcion}}" class="form-control " autofocus="autofocus" required="required" data-type="string">
 					<span id="help-text" class="help-block">
 					</span>
 					<span id="error-text" class="help-block">
 					</span>
 				</div>
 			</div>
-			<div class="form-group  field-descripcion">
-				<label for="descripcion">
-					DESCRIPCION
+			<div class="form-group  field-norma-codigo">
+				<label for="norma.codigo">
+					NORMA
 				</label>
 				<div class="input-div">
-					<input type="text" name="descripcion" value="{{material.descripcion}}" class="form-control " required="required" data-type="string">
+					<input type="text" name="norma.codigo" value="{{material.norma.codigo}}" class="form-control " data-type="object">
+					<span id="help-text" class="help-block">
+					</span>
+					<span id="error-text" class="help-block">
+					</span>
+				</div>
+			</div>
+			<div class="form-group  field-norma-cantidad">
+				<label for="norma.cantidad">
+					CANTIDAD
+				</label>
+				<div class="input-div">
+					<input type="text" name="norma.cantidad" value="{{material.norma.cantidad}}" class="form-control " data-type="object">
 					<span id="help-text" class="help-block">
 					</span>
 					<span id="error-text" class="help-block">

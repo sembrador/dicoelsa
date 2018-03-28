@@ -33,9 +33,7 @@ Template.ProveedoresDetailsForm.onDestroyed(function() {
 });
 
 Template.ProveedoresDetailsForm.onRendered(function() {
-	pageSession.set("telefonoCrudItems", this.data.proveedor.telefono || []);
-pageSession.set("direccionCrudItems", this.data.proveedor.direccion || []);
-
+	
 
 	pageSession.set("proveedoresDetailsFormInfoMessage", "");
 	pageSession.set("proveedoresDetailsFormErrorMessage", "");
@@ -142,11 +140,6 @@ Template.ProveedoresDetailsForm.helpers({
 	},
 	"errorMessage": function() {
 		return pageSession.get("proveedoresDetailsFormErrorMessage");
-	}, 
-		"direccionCrudItems": function() {
-		return pageSession.get("direccionCrudItems");
-	},
-	"telefonoCrudItems": function() {
-		return pageSession.get("telefonoCrudItems");
 	}
+	
 });

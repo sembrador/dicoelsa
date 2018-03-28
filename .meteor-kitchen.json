@@ -254,11 +254,11 @@
 		},
 		{
 			"path": "client/views/materiales/materiales.html",
-			"checksum": "cc9e0c1e425fb7974f1febd03875d96934aa307d"
+			"checksum": "13154638ccac92341b0e77793f92561dc4d6acd3"
 		},
 		{
 			"path": "client/views/materiales/materiales.js",
-			"checksum": "a2e6f752da54bfa4d0fbea2c8139ccde490c9982"
+			"checksum": "8af7f5729f01d889196758364234101ca33184cc"
 		},
 		{
 			"path": "client/views/materiales/materiales_controller.js",
@@ -266,7 +266,7 @@
 		},
 		{
 			"path": "client/views/materiales/details/details.html",
-			"checksum": "7911d01f738d83763397430cd991c5f8a5d7b543"
+			"checksum": "52839142f26885fa06610be4de6495f4870e4f3e"
 		},
 		{
 			"path": "client/views/materiales/details/details.js",
@@ -278,7 +278,7 @@
 		},
 		{
 			"path": "client/views/materiales/insert/insert.html",
-			"checksum": "7609a322731ec1ba15fa48af8fa98491e4aa7ce1"
+			"checksum": "62be1bb03abe3d32958d905acf3f7964215accb0"
 		},
 		{
 			"path": "client/views/materiales/insert/insert.js",
@@ -290,7 +290,7 @@
 		},
 		{
 			"path": "client/views/materiales/update/update.html",
-			"checksum": "4fd9001443500d16a5d2bd29964ab67e65324591"
+			"checksum": "f1be6d5e8b26acb0c14a6c4bf1d7c460a2196aa2"
 		},
 		{
 			"path": "client/views/materiales/update/update.js",
@@ -302,11 +302,11 @@
 		},
 		{
 			"path": "client/views/proyectos/proyectos.html",
-			"checksum": "821cc37626d4199b295593810bacaa85c66c499c"
+			"checksum": "3e5ac6f16301f7d3524c4d242edd77f90942e073"
 		},
 		{
 			"path": "client/views/proyectos/proyectos.js",
-			"checksum": "99109190e7e3153a9dda0196ebc0debeb857b70f"
+			"checksum": "fb97ac286fa6e244c601f65bd5f18459d9be747c"
 		},
 		{
 			"path": "client/views/proyectos/proyectos_controller.js",
@@ -314,7 +314,7 @@
 		},
 		{
 			"path": "client/views/proyectos/details/details.html",
-			"checksum": "c51a08d74c41507a797fb388d59e67d0b60d7206"
+			"checksum": "85a0f6f3314f2cfa447629beefa0d4afb584229e"
 		},
 		{
 			"path": "client/views/proyectos/details/details.js",
@@ -326,7 +326,7 @@
 		},
 		{
 			"path": "client/views/proyectos/insert/insert.html",
-			"checksum": "aa89b51fbe162aa80ff9d9bd38012b02be31f50a"
+			"checksum": "215381132e93d067f154afabd293f575ae3c4550"
 		},
 		{
 			"path": "client/views/proyectos/insert/insert.js",
@@ -338,7 +338,7 @@
 		},
 		{
 			"path": "client/views/proyectos/update/update.html",
-			"checksum": "2ca792510ffd1bacfe351be3a50edeec288f6965"
+			"checksum": "873b8cbecfc63652bc9e3b4204abe26b7c16c813"
 		},
 		{
 			"path": "client/views/proyectos/update/update.js",
@@ -350,11 +350,11 @@
 		},
 		{
 			"path": "client/views/contratistas/contratistas.html",
-			"checksum": "b48041cadbb0ef8d1dfc5520099af4d711b12629"
+			"checksum": "81126255aa36c3c3f607cce6be86963dc52d76e1"
 		},
 		{
 			"path": "client/views/contratistas/contratistas.js",
-			"checksum": "c9ccd9c2a3fc57f99c358fc06adca654fd488710"
+			"checksum": "45f5192f479d5bfbf61a8190e5413e83d982f550"
 		},
 		{
 			"path": "client/views/contratistas/contratistas_controller.js",
@@ -362,7 +362,7 @@
 		},
 		{
 			"path": "client/views/contratistas/details/details.html",
-			"checksum": "3be17ff9febc5868237b2fd0b69ea2850ae2d0f6"
+			"checksum": "f086a24ed1d49e8e85ec7a45ac83b2e021f41971"
 		},
 		{
 			"path": "client/views/contratistas/details/details.js",
@@ -374,7 +374,7 @@
 		},
 		{
 			"path": "client/views/contratistas/insert/insert.html",
-			"checksum": "f8fa73591a600de400ffcd9686b9c06907c359bb"
+			"checksum": "2e6cc04e06c10f0ff2dc10b8050180627ea1c92b"
 		},
 		{
 			"path": "client/views/contratistas/insert/insert.js",
@@ -386,7 +386,7 @@
 		},
 		{
 			"path": "client/views/contratistas/update/update.html",
-			"checksum": "2652e44121a519e84c86f657cc489bab6ea74a47"
+			"checksum": "e5cdc134e3f24fe61cc904c940b927a0d36142e2"
 		},
 		{
 			"path": "client/views/contratistas/update/update.js",
@@ -398,7 +398,7 @@
 		},
 		{
 			"path": "client/views/transacciones/transacciones.html",
-			"checksum": "8603391633608d382d14ef05922d40e09008d3fb"
+			"checksum": "53c4464a18d7b8ebe9d5c5e719dc7c475656dcb6"
 		},
 		{
 			"path": "client/views/transacciones/transacciones.js",
@@ -410,7 +410,7 @@
 		},
 		{
 			"path": "client/views/transacciones/details/details.html",
-			"checksum": "346b0d690d0885dcb8cc6079cfffc705643907e0"
+			"checksum": "0356d50130b7b08ee6efb1c732b630abb3e4cd81"
 		},
 		{
 			"path": "client/views/transacciones/details/details.js",
@@ -422,7 +422,7 @@
 		},
 		{
 			"path": "client/views/transacciones/insert/insert.html",
-			"checksum": "d10ed00b3a918bb977ab04b2266d9d746db0b862"
+			"checksum": "90bb5c9ed1a108a861d1ee27ecba041fedc25f6e"
 		},
 		{
 			"path": "client/views/transacciones/insert/insert.js",
@@ -434,7 +434,7 @@
 		},
 		{
 			"path": "client/views/transacciones/update/update.html",
-			"checksum": "e306c4505974d93a692bc67b918226696ea1291d"
+			"checksum": "118bd545c7666f8b26ff17302c8465d2648d8c68"
 		},
 		{
 			"path": "client/views/transacciones/update/update.js",
@@ -446,11 +446,11 @@
 		},
 		{
 			"path": "client/views/proveedores/proveedores.html",
-			"checksum": "ddc86349b9486d7c7ed1a18837585de614930f4f"
+			"checksum": "035eb71c77e17331bb018a7cd9d40d142d938637"
 		},
 		{
 			"path": "client/views/proveedores/proveedores.js",
-			"checksum": "d941c2ecc50083d2ec93e82ecc247fb228a6eb43"
+			"checksum": "d922f83bec63612663ef42f45026449e3ae8203e"
 		},
 		{
 			"path": "client/views/proveedores/proveedores_controller.js",
@@ -458,11 +458,11 @@
 		},
 		{
 			"path": "client/views/proveedores/details/details.html",
-			"checksum": "f642bdf4b713b54fd992604152a0417df5af7d29"
+			"checksum": "628269598dd70921fb34c27f197f95929f40579f"
 		},
 		{
 			"path": "client/views/proveedores/details/details.js",
-			"checksum": "145cbab542839acc48dcceb82907d7ec8386d007"
+			"checksum": "495d24b39ae0458042b553fe9e130f1b8cd4a565"
 		},
 		{
 			"path": "client/views/proveedores/details/details_controller.js",
@@ -470,11 +470,11 @@
 		},
 		{
 			"path": "client/views/proveedores/insert/insert.html",
-			"checksum": "377c03d24bbefd2c63dedbd9c7cf7e0c24581609"
+			"checksum": "150765295e66bba41fdae1f14636619285c96530"
 		},
 		{
 			"path": "client/views/proveedores/insert/insert.js",
-			"checksum": "39a7cb102632485edb9bcae04cf691ead1a9d315"
+			"checksum": "8277832cbd0aa72ed73d551ae0cb401ed38c2fe2"
 		},
 		{
 			"path": "client/views/proveedores/insert/insert_controller.js",
@@ -482,11 +482,11 @@
 		},
 		{
 			"path": "client/views/proveedores/update/update.html",
-			"checksum": "5ed2c54a14e28d189fb3e3777acdcddcde030327"
+			"checksum": "58a035219fc514d5e8f85840ff8c8b2f17aa7762"
 		},
 		{
 			"path": "client/views/proveedores/update/update.js",
-			"checksum": "f18b77226c4c0d4bd7b6de746272ae18bbc1b345"
+			"checksum": "ccdec6ca8e5ba32434cd221ffcaf3340d4275291"
 		},
 		{
 			"path": "client/views/proveedores/update/update_controller.js",

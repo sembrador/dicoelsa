@@ -43,7 +43,7 @@ var ProveedoresViewItems = function(cursor) {
 	} else {
 		searchString = searchString.replace(".", "\\.");
 		var regEx = new RegExp(searchString, "i");
-		var searchFields = ["referencia", "descripcion", "direccion", "telefono"];
+		var searchFields = ["descripcion", "direccion.calle", "direccion.provincia", "direccion.distrito", "direccion.corregimiento", "telefonos.fijo", "telefonos.fax", "telefonos.otro", "contacto.nombre", "contacto.celular", "contacto.telefono", "contacto.correo"];
 		filtered = _.filter(raw, function(item) {
 			var match = false;
 			_.each(searchFields, function(field) {
